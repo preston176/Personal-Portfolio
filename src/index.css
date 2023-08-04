@@ -4,9 +4,21 @@
 
 /* react cursor */
 html {
-  --cursor-color: #04ef00;
+  --cursor-color: #4ec7e2;
 }
 
 html.dark-mode {
   --cursor-color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00cfff;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+  display: none;
 }

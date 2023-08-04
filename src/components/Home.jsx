@@ -18,7 +18,7 @@ const Home = () => {
                     {/* image */}
                 </div>
                 <div className="order-first md:order-last relative">
-                    <img src={heroImg} alt="" />
+                    {/* <img src={heroImg} alt="" /> */}
                 </div>
                 
             </div>

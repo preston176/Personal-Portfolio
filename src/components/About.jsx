@@ -4,11 +4,11 @@ import Services from './Services';
 
 const About = () => {
   const skills = [
-    { name: "javaScript && nodeJS", image: '/src/assets/icons/code.png'},
-    { name: "Frontend Frameworks React" },
-    { name: "Backend Frameworks - Express js" },
-    { name: "mySQL & MongoDB" },
-    { name: "Heroku, Firebase, Vercel" },
+    { name: "HTML, CSS && javaScript ", image: '/src/assets/icons/code.png' },
+    { name: "Frontend Frameworks - React", image: '/src/assets/icons/react.png' },
+    { name: "Backend Frameworks - Express js", image: '/src/assets/icons/backend.png' },
+    { name: "mySQL & MongoDB", image: '/src/assets/icons/server.png' },
+    { name: "Heroku, Firebase, Vercel", image: '/src/assets/icons/deploy.png' },
   ]
 
 
@@ -25,13 +25,13 @@ const About = () => {
 
       </div>
       {/* skills card */}
-      <div className='flex flex-col md:flex-row'>
+      <div className='flex flex-col md:flex-row '>
         {
           skills.map((item, i) => {
             return (
-              <div key={crypto.randomUUID()} className='skills md:w-[256px] md:h-[254px] bg-light hover:bg-primary flex flex-col items-baseline justify-end my-3 md:m-3 p-5 shadow-sm transition-all duration-500'>
-              <img src={item.image} />
-              <p className='text-2xl mt-3 text-white font-semibold'>{item.name}</p>
+              <div key={i} className='md:w-[256px] md:h-[254px] bg-slate-800 hover:bg-primary hover:scale-110 flex flex-col items-baseline justify-end my-3 md:m-3 p-5 shadow-sm transition-all duration-500 ease-in-out'>
+                <img src={item.image} className='max-w-[60px] self-center m-auto' />
+                <p className=' hover:text-black text-2xl mt-3 text-white font-semibold '>{item.name}</p>
               </div>
             )
           })
