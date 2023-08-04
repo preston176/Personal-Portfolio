@@ -6,12 +6,27 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import AnimatedCursor from "react-animated-cursor"
 
 function App() {
-  
+
 
   return (
     <div className="mx-auto max-w-7xl">
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={35}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        hasBlendMode={true}
+        innerStyle={{
+          backgroundColor: 'var(--cursor-color)'
+        }}
+        outerStyle={{
+          border: '3px solid var(--cursor-color)'
+        }}
+      />
       <Header />
       <Home />
       <About />

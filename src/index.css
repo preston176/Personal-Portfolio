@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* react cursor */
+html {
+  --cursor-color: #04ef00;
+}
+
+html.dark-mode {
+  --cursor-color: #fff;
+}
