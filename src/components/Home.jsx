@@ -17,10 +17,13 @@ const Home = () => {
                     </div>
                     {/* image */}
                 </div>
-                    <div className="order-first md:order-last relative">
+                <div className="order-first md:order-last relative">
                     <img src={heroImg} alt="" />
-                    </div>
+                </div>
+                
             </div>
+            {/* separator */}
+                <div className="h-24 w-full bg-[#181824] mx-auto absolute left-0 hidden md:block"></div>
         </div>
     );
 };
