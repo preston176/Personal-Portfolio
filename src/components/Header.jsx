@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BookOpenIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import { Link, ScrollLink } from 'react-scroll';
 
@@ -9,7 +9,7 @@ const Header = () => {
     { name: "Projects", link: "home" },
     { name: "Contact me", link: "contact" },
   ]
-  let [open, setOpen]
+  let [open, setOpen] = useState(false)
 
   return (
     <div className='w-full max-w-7xl'>
@@ -20,6 +20,15 @@ const Header = () => {
             Preston Mayieka
           </span>
         </div>
+
+        {/* md: mobile icons */}
+        <div onClick={()=> {setOpen(!open)}} className='w-7 h-7 right-8 top-6 cursor-pointer md:hidden text-white absolute'>
+          {
+            /* show only if open... */
+            open ? <XMarkIcon /> : <Bars3BottomRightIcon />
+          }
+        </div>
+
         {/* navbar */}
         <ul className='md:flex md: items-center md:pd-0 absolute md:static md:z-auto z-10 left-0 w-full md:w-auto mt-4 md:pl-0 pl-9 bg-slate-400 sm:bg-transparent transition-all duration-500 ease-in-out'>
           {links.map((item) =>
