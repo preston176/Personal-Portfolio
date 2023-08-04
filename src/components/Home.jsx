@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="text-white">
                     <h5 className='text-3xl mt-12'>Hello there, I'm</h5>
                     <h1 className='font-semibold text-3xl md:text-5xl my-4'>
-                        <Typewriter
+              <Typewriter
                             options={{
                                 strings: ['Preston Mayieka'],
                                 autoStart: true,
@@ -23,7 +23,8 @@ const Home = () => {
 
                     </h1>
 
-                    <p className='md:w-96'>I am a<Typewriter
+                    <p className='md:w-96'>I am a
+               <Typewriter
                         options={{
                             strings: ['Web developer', 'Computer scientist', 'Tech Enthusiast', 'Open-Source Contributer'],
                             autoStart: true,
@@ -31,6 +32,7 @@ const Home = () => {
                             delay: 75,
                             deleteSpeed: 100
                         }} />
+             
                     </p>
                     {/* buttons section */}
                     <div className="mt-5">

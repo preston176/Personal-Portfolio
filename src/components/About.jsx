@@ -4,11 +4,11 @@ import Services from './Services';
 
 const About = () => {
   const skills = [
-    { name: "HTML, CSS && javaScript ", image: '/src/assets/icons/code.png' },
-    { name: "Frontend Frameworks - React", image: '/src/assets/icons/react.png' },
-    { name: "Backend Frameworks - Express js", image: '/src/assets/icons/backend.png' },
+    { name: "HTML, CSS && javaScript ", image: '/assets/icons/code.png' },
+    { name: "Frontend Frameworks - React", image: '/assets/icons/react.png' },
+    { name: "Backend Frameworks - Express js", image: '/assets/icons/backend.png' },
     { name: "mySQL & MongoDB", image: '/src/assets/icons/server.png' },
-    { name: "Heroku, Firebase, Vercel", image: '/src/assets/icons/deploy.png' },
+    { name: "Heroku, Firebase, Vercel", image: '/assets/icons/deploy.png' },
   ]
 
 
