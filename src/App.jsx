@@ -7,13 +7,14 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import AnimatedCursor from "react-animated-cursor"
-import { Dots } from 'react-preloaders';
+
 
 function App() {
 
 
   return (
     <div className="mx-auto max-w-7xl">
+
       <AnimatedCursor
         innerSize={8}
         outerSize={35}
@@ -34,9 +35,6 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-      {/* <Dots
-      background="#00fde8"
-      /> */}
     </div>
   );
 }
