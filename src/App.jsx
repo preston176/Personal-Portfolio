@@ -34,9 +34,9 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-      <Dots
+      {/* <Dots
       background="#00fde8"
-      />
+      /> */}
     </div>
   );
 }
