@@ -4,7 +4,7 @@ import heroImg from '../assets/img2.png'
 const Home = () => {
     return (
         <div className='px-7 md:px-10 my-14 md:h-screen bg-[#1a1a29]'>
-            <div className="">
+            <div className="w-full flex flex-col md:flex-row items-center justify-between">
                 {/* texts section */}
                 <div className="text-white">
                     <h5 className='text-3xl mt-12'>Hello there, I'm</h5>
@@ -16,10 +16,10 @@ const Home = () => {
                         <button className='btn outline px-5 py-1.5 rounded border-none text-white ml-5'>Download CV</button>
                     </div>
                     {/* image */}
+                </div>
                     <div className="order-first md:order-last relative">
                     <img src={heroImg} alt="" />
                     </div>
-                </div>
             </div>
         </div>
     );
