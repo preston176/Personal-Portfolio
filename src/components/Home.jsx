@@ -3,7 +3,7 @@ import heroImg from '../assets/img2.png'
 
 const Home = () => {
     return (
-        <div className='px-7 md:px-10 my-14 md:h-screen bg-[#1a1a29]'>
+        <div className='px-7 md:px-10 my-14 md:h-screen bg-[#1a1a29]' id='home'>
             <div className="w-full flex flex-col md:flex-row items-center justify-between">
                 {/* texts section */}
                 <div className="text-white">
