@@ -1,4 +1,6 @@
 import React from 'react';
+import Services from './Services';
+
 
 const About = () => {
   const skills = [
@@ -35,6 +37,7 @@ const About = () => {
           })
         }
       </div>
+      <Services />
     </div>
   );
 };
