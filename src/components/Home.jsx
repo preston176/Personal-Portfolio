@@ -1,4 +1,5 @@
 import React from 'react';
+import heroImg from '../assets/img2.png'
 
 const Home = () => {
     return (
@@ -13,6 +14,10 @@ const Home = () => {
                     <div className="mt-5">
                         <button className='btn bg-primary py-2 px-4 text-white rounded hover:bg-white hover:text-primary transition-all duration-500'>About me</button>
                         <button className='btn outline px-5 py-1.5 rounded border-none text-white ml-5'>Download CV</button>
+                    </div>
+                    {/* image */}
+                    <div className="order-first md:order-last relative">
+                    <img src={heroImg} alt="" />
                     </div>
                 </div>
             </div>
