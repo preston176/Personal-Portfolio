@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import AnimatedCursor from "react-animated-cursor"
+import { Dots } from 'react-preloaders';
 
 function App() {
 
@@ -33,6 +34,9 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <Dots
+      background="#00fde8"
+      />
     </div>
   );
 }
