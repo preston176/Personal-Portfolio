@@ -2,22 +2,35 @@ import React from 'react';
 
 const Projects = () => {
   const projectsData = [
-     {title: "",
-      description: "",
-      photo: ""},
-      {title: "",
-      description: "",
-      photo: ""},
-      {title: "",
-      description: "",
-      photo: ""},
-      {title: "",
-      description: "",
-      photo: ""},
-      {title: "",
-      description: "",
-      photo: ""},
-    ]
+    {
+      title: "MarketHUB",
+      description: "An online fully functional e-commerce website",
+      photo: "../assets/projects/markethub.png",
+      liveURL: "https://markethub-f6f5e.web.app/",
+      repoURL: "https://github.com/preston176/ShopMART-E-commerce"
+    },
+    {
+      title: "BlogSphere",
+      description: "A blogging website",
+      photo: "../assets/projects/blogsphere.png",
+      liveURL: "https://blogsphere-react.web.app/",
+      repoURL: "https://github.com/preston176/blogging-website-react-js"
+    },
+    {
+      title: "ChatSphere",
+      description: "A chatting app that lets you talk to your friends",
+      photo: "../assets/projects/chatsphere.png",
+      liveURL: "https://chatsphere-chatapp.web.app/",
+      repoURL: "https://github.com/preston176/ChatSphere-react"
+    },
+    {
+      title: "Todo List App",
+      description: "Let's you keep track of what you wanna do",
+      photo: "../assets/projects/todoapp.png",
+      liveURL: "https://todo-list-react-preston176-oj32ea8sk-preston176.vercel.app",
+      repoURL: "https://github.com/preston176/todo-list-react"
+    },
+  ]
 
 
   return (
@@ -25,24 +38,24 @@ const Projects = () => {
       <h1 className='text-3xl mt-5 text-primary font-semibold'>Projects</h1>
       <p className='text-white my-2 md:w-2/3 leading-[2]'>I have worked on a number of projects ... checkout some of my featured projects</p>
       {/* project items */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 my-6 items-center justify-center">
-      {
-        projectsData.map((project, i) => 
-        <div key={crypto.randomUUID()} className='flex flex-col shadow-sm md:w-[343px] bg-[#31313f] rounded p-4'> 
-        <a href={project.photo} className='mb-4'>
-        <img src={project.photo} alt="project-image" />
-        </a>
-        <h3 className='text-primary font-semibold text-lg'>{project.title}</h3>
-        <p className='text-white mt-1'>{project.description}</p>
-{/* btns */}
-        <div className="mt-5">
-                        <button className='btn bg-primary py-2 px-4 text-white rounded hover:bg-white hover:text-primary transition-all duration-500'>About me</button>
-                        <button className='btn outline px-5 py-1.5 rounded border-none text-white ml-5'>Download CV</button>
-                    </div>
-        </div>
-        )
-      }
-    </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 my-6 items-center justify-center">
+        {
+          projectsData.map((project, i) =>
+            <div key={crypto.randomUUID()} className='flex flex-col shadow-sm md:w-[343px] bg-[#31313f] rounded p-4'>
+              <a href={project.photo} className='mb-4'>
+                <img src={project.photo} alt="project-image" />
+              </a>
+              <h3 className='text-primary font-semibold text-lg'>{project.title}</h3>
+              <p className='text-white mt-1'>{project.description}</p>
+              {/* btns */}
+              <div className="mt-5">
+                <button className='btn bg-primary py-2 px-4 text-white rounded hover:bg-white hover:text-primary transition-all duration-500'>Checkout</button>
+                <button className='btn outline px-5 py-1.5 rounded border-none text-white ml-5'>Download CV</button>
+              </div>
+            </div>
+          )
+        }
+      </div>
 
 
     </div>
