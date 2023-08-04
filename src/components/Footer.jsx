@@ -28,19 +28,16 @@ const Footer = () => {
           <div className="w-full lg:w-6/12 px-4">
             <div className="flex flex-wrap items-top mb-6">
               <div className="w-full lg:w-4/12 px-4 ml-auto">
-                <span className="block uppercase text-slate-200 text-sm font-semibold mb-2">Useful Links</span>
+                <span className="block uppercase text-slate-200 text-sm font-semibold mb-2">Quick Links</span>
                 <ul className="list-unstyled">
                   <li>
-                    <a className="text-slate-300 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+                    <a className="text-slate-300 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#about">About me</a>
                   </li>
                   <li>
                     <a className="text-slate-300 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
                   </li>
                   <li>
-                    <a className="text-slate-300 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
-                  </li>
-                  <li>
-                    <a className="text-slate-300 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free Products</a>
+                    <a className="text-slate-300 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.github.com/preston176">Github</a>
                   </li>
                 </ul>
               </div>

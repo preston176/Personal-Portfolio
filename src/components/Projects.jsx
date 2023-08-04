@@ -1,32 +1,33 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 const Projects = () => {
   const projectsData = [
     {
       title: "MarketHUB",
       description: "An online fully functional e-commerce website",
-      photo: "../assets/projects/markethub.png",
+      photo: "../src/assets/projects/markethub.png",
       liveURL: "https://markethub-f6f5e.web.app/",
       repoURL: "https://github.com/preston176/ShopMART-E-commerce"
     },
     {
       title: "BlogSphere",
       description: "A blogging website",
-      photo: "../assets/projects/blogsphere.png",
+      photo: "../src/assets/projects/blogsphere.png",
       liveURL: "https://blogsphere-react.web.app/",
       repoURL: "https://github.com/preston176/blogging-website-react-js"
     },
     {
       title: "ChatSphere",
       description: "A chatting app that lets you talk to your friends",
-      photo: "../assets/projects/chatsphere.png",
+      photo: "../src/assets/projects/chatsphere.png",
       liveURL: "https://chatsphere-chatapp.web.app/",
       repoURL: "https://github.com/preston176/ChatSphere-react"
     },
     {
       title: "Todo List App",
       description: "Let's you keep track of what you wanna do",
-      photo: "../assets/projects/todoapp.png",
+      photo: "../src/assets/projects/todoapp.png",
       liveURL: "https://todo-list-react-preston176-oj32ea8sk-preston176.vercel.app",
       repoURL: "https://github.com/preston176/todo-list-react"
     },
@@ -49,8 +50,8 @@ const Projects = () => {
               <p className='text-white mt-1'>{project.description}</p>
               {/* btns */}
               <div className="mt-5">
-                <button className='btn bg-primary py-2 px-4 text-white rounded hover:bg-white hover:text-primary transition-all duration-500'>Checkout</button>
-                <button className='btn outline px-5 py-1.5 rounded border-none text-white ml-5'>Download CV</button>
+                <Link href={project.liveURL}> <button className='btn bg-primary py-2 px-4 text-white rounded hover:bg-white hover:text-primary transition-all duration-500'>Live Preview</button></Link>
+                <Link href={project.repoURL}> <button className='btn outline px-5 py-1.5 rounded border-none text-white ml-5'>Git Repo</button></Link>
               </div>
             </div>
           )
