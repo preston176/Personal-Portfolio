@@ -17,13 +17,7 @@ const Projects = () => {
       liveURL: "https://blogsphere-react.web.app/",
       repoURL: "https://github.com/preston176/blogging-website-react-js"
     },
-    {
-      title: "ChatSphere",
-      description: "A chatting app that lets you talk to your friends",
-      photo: "/images/projects/chatsphere.png",
-      liveURL: "https://chatsphere-chatapp.web.app/",
-      repoURL: "https://github.com/preston176/ChatSphere-react"
-    },
+
     {
       title: "Todo List App",
       description: "Let's you keep track of what you wanna do",
@@ -64,3 +58,11 @@ const Projects = () => {
 };
 
 export default Projects;
+
+ // {
+    //   title: "ChatSphere",
+    //   description: "A chatting app that lets you talk to your friends",
+    //   photo: "/images/projects/chatsphere.png",
+    //   liveURL: "https://chatsphere-chatapp.web.app/",
+    //   repoURL: "https://github.com/preston176/ChatSphere-react"
+    // },
