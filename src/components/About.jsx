@@ -17,7 +17,7 @@ const About = () => {
   return (
     <div className='px-7 md:px-10 sm:mt-24' id='about'>
       <h1 className='text-3xl mt-5 text-primary font-semibold'>About me</h1>
-      <p className='text-white my-2 md:w-2/3 leading-[2]'>I enjoy solving technical problems, researching and developing new technologies, designing software applications for different platforms. I enjoy meeting people and working with them in a team environment. I also enjoy interacting with clients and customers. My strong customer service skills allow me to do this well. I am a quick learner with a fun, outgoing personality. In addition, I excel in my ability to work under pressure and handle stressful situations very well.</p>
+      <p className='text-white my-2 md:w-2/3 leading-[2]' >I enjoy solving technical problems, researching and developing new technologies, designing software applications for different platforms. I enjoy meeting people and working with them in a team environment. I also enjoy interacting with clients and customers. My strong customer service skills allow me to do this well. I am a quick learner with a fun, outgoing personality. In addition, I excel in my ability to work under pressure and handle stressful situations very well.</p>
       {/* techstack */}
       <div className="md:flex items-center my-7">
         <p className='text-primary text-8xl font-bold'>2+</p>

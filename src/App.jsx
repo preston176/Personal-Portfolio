@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import AnimatedCursor from "react-animated-cursor"
+import Blogs from "./components/Blogs";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <Home />
       <About />
       <Projects />
+      <Blogs />
       <Contact />
       <Footer />
     </div>
