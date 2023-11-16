@@ -5,9 +5,9 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 const Header = () => {
   const links = [
     { name: 'Home', link: 'home' },
-    { name: 'Blogs', link: 'https://codewithpres.hashnode.dev' },
     { name: 'About me', link: 'about' },
-    { name: 'Projects', link: 'home' },
+    { name: 'Projects', link: 'projects' },
+    { name: 'Articles', link: 'https://codewithpres.hashnode.dev' },
     { name: 'Contact me', link: 'contact' },
   ];
 

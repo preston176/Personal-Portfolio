@@ -29,9 +29,9 @@ const About = () => {
         {
           skills.map((item, i) => {
             return (
-              <div key={i} className='md:w-[256px] md:h-[254px] bg-slate-800 hover:bg-primary hover:scale-110 flex flex-col items-baseline justify-end my-3 md:m-3 p-5 shadow-sm transition-all duration-500 ease-in-out'>
+              <div key={i} className='md:w-[256px] md:h-[254px] bg-slate-800 hover:scale-110 flex flex-col items-baseline justify-end my-3 md:m-3 p-5 shadow-sm transition-all duration-500 ease-in-out'>
                 <img src={item.image} className='max-w-[60px] self-center m-auto' />
-                <p className=' hover:text-black text-2xl mt-3 text-white font-semibold '>{item.name}</p>
+                <p className=' text-2xl mt-3 text-white font-semibold '>{item.name}</p>
               </div>
             )
           })
