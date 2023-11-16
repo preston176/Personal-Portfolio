@@ -21,7 +21,7 @@ const Footer = () => {
               <SocialIcon className='ml-4' url="https://github.com/preston176/" />
 
 
-              <SocialIcon className='ml-4' url="https://twitter.com/Preston_176" />
+              <SocialIcon className='ml-4' url="https://codewithpres.hashnode.dev" />
 
             </div>
           </div>
