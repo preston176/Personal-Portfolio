@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="text-white">
                     <h5 className='text-3xl mt-12'>Hello there, I'm</h5>
                     <h1 className='font-semibold text-3xl md:text-5xl my-4'>
-              <Typewriter
+                        <Typewriter
                             options={{
                                 strings: ['Preston Mayieka'],
                                 autoStart: true,
@@ -24,15 +24,15 @@ const Home = () => {
                     </h1>
 
                     <p className='md:w-96'>I am a
-               <Typewriter
-                        options={{
-                            strings: ['Web developer', 'Computer scientist', 'Tech Enthusiast', 'Open-Source Contributer'],
-                            autoStart: true,
-                            loop: true,
-                            delay: 75,
-                            deleteSpeed: 100
-                        }} />
-             
+                        <Typewriter
+                            options={{
+                                strings: ['Web developer', 'Computer scientist', 'Tech Enthusiast', 'Open-Source Contributer'],
+                                autoStart: true,
+                                loop: true,
+                                delay: 75,
+                                deleteSpeed: 100
+                            }} />
+
                     </p>
                     {/* buttons section */}
                     <div className="mt-5">
@@ -41,7 +41,7 @@ const Home = () => {
                             smooth={true}
                             spy={true}>
                             <button className='btn bg-primary py-2 px-4 text-white rounded hover:bg-white hover:text-primary transition-all duration-500'>About me</button></Link>
-                        <button className='btn outline px-5 py-1.5 rounded border-none text-white ml-5'>Download CV</button>
+                        <button className='btn outline px-5 py-1.5 rounded border-none text-white ml-5'><a href="/CV-Preston_Nyamweya.pdf" target='_blank'>Download CV</a></button>
                     </div>
                     {/* image */}
                 </div>
