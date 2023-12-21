@@ -19,11 +19,11 @@ const Projects = () => {
     },
 
     {
-      title: "Todo List App",
-      description: "Let's you keep track of what you wanna do",
-      photo: "/images/projects/todoapp.png",
-      liveURL: "https://todo-list-react-preston176-oj32ea8sk-preston176.vercel.app",
-      repoURL: "https://github.com/preston176/todo-list-react"
+      title: "Jobify",
+      description: "A platform where you can be able to easily post or find jobs",
+      photo: "/images/projects/jobify.png",
+      liveURL: "https://jobify-app-3o5e.onrender.com/",
+      repoURL: "https://github.com/preston176/jobify"
     },
   ]
 
