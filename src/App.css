@@ -78,3 +78,12 @@ body {
 .mobile-menu.open {
   display: block;
 }
+
+.stats-card {
+  transition: 0.25s;
+}
+
+.stats-card:hover {
+  transform: scale(1.05);
+  transition: all 0.25s ease-in-out;
+}
