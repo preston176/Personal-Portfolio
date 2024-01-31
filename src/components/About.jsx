@@ -2,6 +2,7 @@ import React from 'react';
 import Services from './Services';
 
 
+
 const About = () => {
   const skills = [
     { name: "HTML, CSS && javaScript ", image: '/assets/icons/code.png' },
@@ -13,6 +14,11 @@ const About = () => {
 
 
 
+  // calculate years of experience
+
+  const startDate = new Date(2022, 0, 1); // January 1, 2022
+  const currentDate = new Date();
+  const yearsOfExperience = currentDate.getFullYear() - startDate.getFullYear();
 
   return (
     <div className='px-7 md:px-10 sm:mt-24' id='about'>
@@ -20,7 +26,7 @@ const About = () => {
       <p className='text-white my-2 md:w-2/3 leading-[2]' >I enjoy solving technical problems, researching and developing new technologies, designing software applications for different platforms. I enjoy meeting people and working with them in a team environment. I also enjoy interacting with clients and customers. My strong customer service skills allow me to do this well. I am a quick learner with a fun, outgoing personality. In addition, I excel in my ability to work under pressure and handle stressful situations very well.</p>
       {/* techstack */}
       <div className="md:flex items-center my-7">
-        <p className='text-primary text-8xl font-bold'>2+</p>
+        <p className='text-primary text-8xl font-bold'>{yearsOfExperience}+</p>
         <p className='text-white text-2xl md: ml-5'>Years of experience in working with web development technologies</p>
 
       </div>
