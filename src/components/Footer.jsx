@@ -39,7 +39,7 @@ const Footer = () => {
                     <a className="text-slate-300 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#about">About me</a>
                   </li>
                   <li>
-                    <a className="text-slate-300 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
+                    <a className="text-slate-300 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://codewithpres.hashnode.dev/">Blog</a>
                   </li>
                   <li>
                     <a className="text-slate-300 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.github.com/preston176">Github</a>
