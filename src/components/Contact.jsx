@@ -78,19 +78,19 @@ const Contact = () => {
             <ToastContainer />
 
             <form onSubmit={handleFormSubmit} className='text-white' >
-              <input type="text" name='name' id='name' placeholder='Your Name:' className='bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded my-3' />
+              <input type="text" name='name' id='name' placeholder='Your Name:' required className='bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded my-3' />
               <input type="email" name='email' id='email' placeholder='Your email:' required className='bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded my-3' />
               <ValidationError
                 prefix="Email"
                 field="email"
                 errors={state.errors} />
-              <textarea name="message" id="message" cols="30" rows="5" placeholder='Message: ' className='bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded my-3'></textarea>
+              <textarea required name="message" id="message" cols="30" rows="5" placeholder='Message: ' className='bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded my-3'></textarea>
               <ValidationError
                 prefix="Message"
                 field="message"
                 errors={state.errors}
               />
-              <button disabled={state.submitting} className='btn bg-primary py-2 px-12 text-white hover:bg-white hover:text-primary block transition-all duration-500 rounded'>Send</button>
+              <button disabled={state.submitting } className='btn bg-primary py-2 px-12 text-white hover:bg-white hover:text-primary block transition-all duration-500 rounded'>Send</button>
             </form>
           </div>
         </div>
