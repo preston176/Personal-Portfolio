@@ -8,12 +8,14 @@ const Blogs = () => {
       description: "A runtime environment for executing JavaScript code server-side",
       photo: "https://cdn.hashnode.com/res/hashnode/image/upload/v1703155483443/e42a7be2-890a-4bd2-accf-306e53ccebbd.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
       liveURL: "https://codewithpres.hashnode.dev/nodejs-explained-a-beginner-guide",
+      altText: "An image of Node.js logo"
     },
     {
       title: "Writing Comprehensive API Documentation",
       description: "A step-by-step guide on how you can be able to write an API documentation",
       photo: "https://cdn.hashnode.com/res/hashnode/image/upload/v1705566411376/07d63224-6bd9-4b66-80c5-bfd59c3469d0.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
       liveURL: "https://wtdkenya.hashnode.dev/writing-comprehensive-api-documentation",
+      altText: "An image of API documentation"
     },
 
     {
@@ -21,6 +23,7 @@ const Blogs = () => {
       description: "This article is your passport to the heart of Hacktoberfest. Get to know what is Hacktoberfest",
       photo: "https://cdn.hashnode.com/res/hashnode/image/upload/v1697178173972/973bb1c9-0645-4f0a-87c7-d4542f65928c.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
       liveURL: "https://gdscuoe.hashnode.dev/hacktoberfest-2023-everything-you-need-to-know",
+      altText: "An image of Hacktoberfest logo"
     },
   ]
 
@@ -37,7 +40,7 @@ const Blogs = () => {
               <a href={project.photo} className='mb-4'>
                 <img style={{
                   width: "100%"
-                }} src={project.photo} alt="project-image" />
+                }} src={project.photo} alt={altText} />
               </a>
               <h3 className='text-primary font-semibold text-lg'>{project.title}</h3>
               <p className='text-white mt-1'>{project.description}</p>
