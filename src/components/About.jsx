@@ -5,11 +5,11 @@ import Services from './Services';
 
 const About = () => {
   const skills = [
-    { name: "HTML, CSS && javaScript ", image: '/assets/icons/code.png' },
-    { name: "Frontend Frameworks - React", image: '/assets/icons/react.png' },
-    { name: "Backend Frameworks - Express js", image: '/assets/icons/backend.png' },
-    { name: "mySQL & MongoDB", image: '/src/assets/icons/server.png' },
-    { name: "Heroku, Firebase, Vercel", image: '/assets/icons/deploy.png' },
+    { name: "HTML, CSS && javaScript ", image: '/assets/icons/code.png', altText: 'An image of Web Development'},
+    { name: "Frontend Frameworks - React", image: '/assets/icons/react.png', altText: 'An image of React'},
+    { name: "Backend Frameworks - Express js", image: '/assets/icons/backend.png', altText: 'An image of Backend' },
+    { name: "mySQL & MongoDB", image: '/assets/icons/server.png', altText: 'An image of Database'},
+    { name: "Heroku, Firebase, Vercel", image: '/assets/icons/deploy.png', altText: 'An image of Deployment'},
   ]
 
 
@@ -36,7 +36,7 @@ const About = () => {
           skills.map((item, i) => {
             return (
               <div key={i} className='md:w-[256px] md:h-[254px] bg-slate-800 hover:scale-110 flex flex-col items-baseline justify-end my-3 md:m-3 p-5 shadow-sm transition-all duration-500 ease-in-out'>
-                <img src={item.image} className='max-w-[60px] self-center m-auto' />
+                <img src={item.image} alt={item.altText} className='max-w-[60px] self-center m-auto' />
                 <p className=' text-2xl mt-3 text-white font-semibold '>{item.name}</p>
               </div>
             )
