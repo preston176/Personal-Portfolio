@@ -40,7 +40,7 @@ const Blogs = () => {
               <a href={project.photo} className='mb-4'>
                 <img style={{
                   width: "100%"
-                }} src={project.photo} alt={altText} />
+                }} src={project.photo} alt={project.altText} />
               </a>
               <h3 className='text-primary font-semibold text-lg'>{project.title}</h3>
               <p className='text-white mt-1'>{project.description}</p>

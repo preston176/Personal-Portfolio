@@ -41,7 +41,7 @@ const Projects = () => {
           projectsData.map((project, i) =>
             <div key={crypto.randomUUID()} className='project-card flex flex-col shadow-sm md:w-[343px] bg-[#31313f] rounded p-4'>
               <a href={project.photo} className='mb-4'>
-                <img src={project.photo} alt={altText} />
+                <img src={project.photo} alt={project.altText} />
               </a>
               <h3 className='text-primary font-semibold text-lg'>{project.title}</h3>
               <p className='text-white mt-1'>{project.description}</p>
