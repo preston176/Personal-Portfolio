@@ -30,7 +30,7 @@ const Contact = () => {
       .then(() => {
         // Show success toast message if submission is successful
         toast.success('Message sent successfully!', {
-          position: "top-right",
+          position: "top-left",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
@@ -42,7 +42,7 @@ const Contact = () => {
       .catch(error => {
         // Show error toast message if submission fails
         toast.error('Failed to send message. Please try again later.', {
-          position: "bottom-right",
+          position: "bottom-left",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
