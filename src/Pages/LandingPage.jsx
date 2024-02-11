@@ -12,7 +12,8 @@ import backToTopIcon from '/assets/icons/back-to-top.png';
 
 
 const LandingPage = () => {
-    const [showWhatsApp, setShowWhatsApp] = useState(false);
+    const [showBackToTop, setShowBackToTop] = useState(false);
+    const [showWhatsApp, setShowWhatsApp] = useState(true);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,9 +22,9 @@ const LandingPage = () => {
             const scrollThreshold = 0.25 * windowHeight;
 
             if (scrollPosition > scrollThreshold) {
-                setShowWhatsApp(true);
+                setShowBackToTop(true);
             } else {
-                setShowWhatsApp(false);
+                setShowBackToTop(false);
             }
         };
 
@@ -56,7 +57,7 @@ const LandingPage = () => {
             </div>
             {/* End of back to top */}
             {/* Floating Whatsapp Icon on bottom right */}
-            <div className={`fixed top-0 right-0 mr-3 mb-3 py-2 ${showWhatsApp ? 'opacity-95' : 'opacity-0 transition-opacity duration-700'}`} style={{
+            <div className={`fixed top-0 right-0 mr-3 mb-3 py-2 ${showBackToTop ? 'opacity-95' : 'opacity-0 transition-opacity duration-700'}`} style={{
                 zIndex: "6",
                 left: "initial",
             }}>
