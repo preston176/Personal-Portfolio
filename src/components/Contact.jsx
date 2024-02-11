@@ -3,6 +3,7 @@ import { SocialIcon } from 'react-social-icons';
 import { useForm, ValidationError } from '@formspree/react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SocialIcons from './SocialIconsContainer';
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("mjvngnoq");
@@ -65,10 +66,7 @@ const Contact = () => {
             <p className='text-white my-2 md:w-2/3 leading-[2]'>
               {/* social icons */}
               <div className="flex mx-2 hover:cursor-pointer">
-                <SocialIcon className='ml-4' url="https://twitter.com/Preston_176" />
-                <SocialIcon className='ml-4' url="https://www.linkedin.com/in/preston-mayieka-308b2b24a/" />
-                <SocialIcon className='ml-4' url="https://github.com/preston176/" />
-                <SocialIcon className='ml-4' url="https://twitter.com/Preston_Mayieka" />
+                <SocialIcons />
               </div>
             </p>
           </div>
@@ -90,7 +88,7 @@ const Contact = () => {
                 field="message"
                 errors={state.errors}
               />
-              <button disabled={state.submitting } className='btn bg-primary py-2 px-12 text-white hover:bg-white hover:text-primary block transition-all duration-500 rounded'>Send</button>
+              <button disabled={state.submitting} className='btn bg-primary py-2 px-12 text-white hover:bg-white hover:text-primary block transition-all duration-500 rounded'>Send</button>
             </form>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
+import SocialIcons from './SocialIconsContainer';
 
 const Footer = () => {
   // Get the current year
@@ -18,15 +19,7 @@ const Footer = () => {
             </h5>
             <div className="mt-6 lg:mb-0 mb-6">
 
-              <SocialIcon className='ml-4' url="https://twitter.com/Preston_176" />
-
-
-              <SocialIcon className='ml-4' url="https://www.linkedin.com/in/preston-mayieka-308b2b24a/" />
-
-              <SocialIcon className='ml-4' url="https://github.com/preston176/" />
-
-
-              <SocialIcon className='ml-4' url="https://codewithpres.hashnode.dev" />
+              <SocialIcons />
 
             </div>
           </div>
