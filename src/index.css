@@ -5,6 +5,7 @@
 /* react cursor */
 html {
   --cursor-color: #4ec7e2;
+  scroll-behavior: smooth;
 }
 
 html.dark-mode {
