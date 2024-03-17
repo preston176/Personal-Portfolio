@@ -12,12 +12,12 @@ const Projects = () => {
       altText: "An image of MarketHUB project"
     },
     {
-      title: "BlogSphere",
-      description: "A blogging website",
-      photo: "/images/projects/blogsphere.png",
-      liveURL: "https://blogsphere-react.web.app/",
-      repoURL: "https://github.com/preston176/blogging-website-react-js",
-      altText: "An image of BlogSphere project"
+      title: "AI Image Generator App",
+      description: "AI Image Generator App In React Using OpenAI",
+      photo: "/images/projects/AIGEN.png",
+      liveURL: "https://ai-gen-sable.vercel.app/",
+      repoURL: "https://github.com/preston176/AI-Gen",
+      altText: "An image of AI Image Generator project"
     },
 
     {
