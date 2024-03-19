@@ -43,7 +43,7 @@ const LandingPage = () => {
             <About />
             <Projects />
             <Blogs />
-            <Stats />
+            {/* <Stats /> */}
             <Contact />
             <Footer />
             {/* Back to top Icon */}
