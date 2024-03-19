@@ -1,7 +1,6 @@
-import React from 'react';
 import Typewriter from 'typewriter-effect';
-import heroImg from '../assets/img2.png'
-import { Link } from 'react-scroll';
+import heroImg from '../assets/img2.png';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -36,10 +35,7 @@ const Home = () => {
                     </p>
                     {/* buttons section */}
                     <div className="mt-5">
-                        <Link to="about"
-                            activeClass='active'
-                            smooth={true}
-                            spy={true}>
+                        <Link to="about" className='active'>
                             <button className='btn bg-primary py-2 px-4 text-white rounded hover:bg-white hover:text-primary transition-all duration-500'>About me</button></Link>
                         <button className='btn outline px-5 py-1.5 rounded border-none text-white ml-5'><a href="/CV-Preston_Nyamweya.pdf" target='_blank'>Download CV</a></button>
                     </div>

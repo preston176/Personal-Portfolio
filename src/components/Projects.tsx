@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link } from 'react-scroll';
+
 
 const Projects = () => {
   const projectsData = [
@@ -38,7 +37,7 @@ const Projects = () => {
       {/* project items */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 my-6 items-center justify-center">
         {
-          projectsData.map((project, i) =>
+          projectsData.map((project) =>
             <div key={crypto.randomUUID()} className='project-card flex flex-col shadow-sm md:w-[343px] bg-[#31313f] rounded p-4'>
               <a href={project.photo} className='mb-4'>
                 <img src={project.photo} alt={project.altText} />
