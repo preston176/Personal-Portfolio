@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Home from '../components/Home';
 import About from '../components/About';
@@ -13,7 +13,7 @@ import backToTopIcon from '/assets/icons/back-to-top.png';
 
 const LandingPage = () => {
     const [showBackToTop, setShowBackToTop] = useState<boolean>(false);
-    const [showWhatsApp, setShowWhatsApp] = useState<boolean>(true);
+    const [showWhatsApp] = useState<boolean>(true);
 
     useEffect(() => {
         const handleScroll = () => {
