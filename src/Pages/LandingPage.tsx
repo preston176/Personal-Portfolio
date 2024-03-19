@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Home from '../components/Home';
 import About from '../components/About';
 import Projects from '../components/Projects';
 import Blogs from '../components/Blogs';
-import Stats from '../components/Stats';
+// import Stats from '../components/Stats';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import whatsappLogo from '/assets/icons/WhatsApp_icon.png';
@@ -12,8 +12,8 @@ import backToTopIcon from '/assets/icons/back-to-top.png';
 
 
 const LandingPage = () => {
-    const [showBackToTop, setShowBackToTop] = useState(false);
-    const [showWhatsApp, setShowWhatsApp] = useState(true);
+    const [showBackToTop, setShowBackToTop] = useState<boolean>(false);
+    const [showWhatsApp] = useState<boolean>(true);
 
     useEffect(() => {
         const handleScroll = () => {

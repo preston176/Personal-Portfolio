@@ -18,7 +18,6 @@ function App() {
           innerScale={1}
           outerScale={2}
           outerAlpha={0}
-          hasBlendMode={true}
           innerStyle={{
             backgroundColor: 'var(--cursor-color)'
           }}

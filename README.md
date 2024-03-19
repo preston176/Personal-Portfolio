@@ -1,2 +1,3 @@
-# preston176-portfolio-reactjs
-repo for my personal portfolio webiste built with react js 
+## React + TypeScript Portfolio
+
+- This is the version of my react js portfolio converted into React TypeScript
