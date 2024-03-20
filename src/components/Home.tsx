@@ -1,6 +1,6 @@
 import Typewriter from 'typewriter-effect';
 // import heroImg from '../assets/img2.png';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const Home = () => {
     return (
