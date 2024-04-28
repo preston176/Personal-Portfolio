@@ -23,6 +23,13 @@ const Blogs = () => {
             liveURL: "https://gdscuoe.hashnode.dev/hacktoberfest-2023-everything-you-need-to-know",
             altText: "An image of Hacktoberfest logo"
         },
+        {
+            title: "Is AI taking over Web development ?",
+            description: "This article demistifies the myth of AI replacing Web developers",
+            photo: "https://cdn.hashnode.com/res/hashnode/image/upload/v1714301705150/bf439462-aa0c-4c55-979c-7d5cc44c8d25.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+            liveURL: "https://codewithpres.hashnode.dev/is-ai-taking-over-web-development",
+            altText: "An image of AI replacing humans blog"
+        },
     ]
 
 
