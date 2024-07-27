@@ -1,13 +1,13 @@
 
 
 const About = () => {
-    const skills = [
-        { name: "HTML, CSS && javaScript ", image: '/assets/icons/code.png', altText: 'An image of Web Development' },
-        { name: "Frontend Frameworks - React", image: '/assets/icons/react.png', altText: 'An image of React' },
-        { name: "Backend Frameworks - Express js", image: '/assets/icons/backend.png', altText: 'An image of Backend' },
-        { name: "mySQL & MongoDB", image: '/assets/icons/server.png', altText: 'An image of Database' },
-        { name: "Heroku, Firebase, Vercel", image: '/assets/icons/deploy.png', altText: 'An image of Deployment' },
-    ]
+    // const skills = [
+    //     { name: "HTML, CSS && javaScript ", image: '/assets/icons/code.png', altText: 'An image of Web Development' },
+    //     { name: "Frontend Frameworks - React", image: '/assets/icons/react.png', altText: 'An image of React' },
+    //     { name: "Backend Frameworks - Express js", image: '/assets/icons/backend.png', altText: 'An image of Backend' },
+    //     { name: "mySQL & MongoDB", image: '/assets/icons/server.png', altText: 'An image of Database' },
+    //     { name: "Heroku, Firebase, Vercel", image: '/assets/icons/deploy.png', altText: 'An image of Deployment' },
+    // ]
 
 
 
