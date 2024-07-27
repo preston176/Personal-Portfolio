@@ -9,6 +9,8 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import whatsappLogo from '/assets/icons/WhatsApp_icon.png';
 import backToTopIcon from '/assets/icons/back-to-top.png';
+import Resume from '../components/Resume';
+import Services from '../components/Services';
 
 
 const LandingPage = () => {
@@ -41,6 +43,8 @@ const LandingPage = () => {
             <Header />
             <Home />
             <About />
+            <Resume />
+            <Services />
             <Projects />
             <Blogs />
             {/* <Stats /> */}
