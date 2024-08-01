@@ -37,8 +37,8 @@ const Home = () => {
                     {/* buttons section */}
                     <div className="mt-5">
                         <Link to="about" className='active'>
-                            <button className='btn bg-primary py-2 px-4 text-white rounded hover:bg-white hover:text-primary transition-all duration-500'>About me</button></Link>
-                        <button className='btn outline px-5 py-1.5 rounded border-none text-white ml-5'><a href="/CV-Preston_Nyamweya.pdf" target='_blank'>Download CV</a></button>
+                            <button className=' bg-white py-2 px-4 text-black rounded hover:bg-white hover:text-primary transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary' aria-label='About me'>About me</button></Link>
+                        <button className=' outline px-5 py-1.5 rounded border-none text-white ml-5'><a href="/CV-Preston_Nyamweya.pdf" target='_blank'>Download CV</a></button>
                     </div>
                     {/* image */}
                 </div>

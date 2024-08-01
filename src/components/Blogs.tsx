@@ -65,7 +65,7 @@ const Blogs = () => {
                                     <p className='text-white mt-1 text-clip overflow-hidden ... line-clamp-2 '>{post.node.brief}</p>
                                     {/* btns */}
                                     <div className="mt-5">
-                                        <a href={post.node.url}> <button className='btn bg-primary py-2 px-4 text-white rounded hover:bg-white hover:text-primary transition-all duration-500'>Read More</button></a>
+                                        <a href={post.node.url}> <button className='btn bg-white py-2 px-4 text-black rounded hover:bg-black hover:text-white transition-all duration-500'>Read More</button></a>
                                         {/* <a href={project.repoURL}> <button className='btn outline px-5 py-1.5 rounded border-none text-white ml-5'>Git Repo</button></a> */}
                                     </div>
 
