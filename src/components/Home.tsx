@@ -1,11 +1,12 @@
 import Typewriter from 'typewriter-effect';
 // import heroImg from '../assets/img2.png';
 import { Link } from 'react-scroll';
+import FeaturedOn from './FeaturedOn';
 
 const Home = () => {
     return (
-        <div className='px-7 md:px-10 my-14 md:h-auto bg-[#1a1a29]' id='home'>
-            <div className="w-full flex flex-col md:flex-row items-center justify-between">
+        <div className='px-7 md:px-10 lg:px-5 my-14 md:h-auto ' id='home'>
+            <div className="w-fit flex flex-col md:flex-row items-center justify-between">
                 {/* texts section */}
                 <div className="text-white">
                     <h5 className='text-3xl mt-12'>Hello there, I'm</h5>
@@ -47,7 +48,9 @@ const Home = () => {
 
             </div>
             {/* separator */}
-            <div className="h-24 w-full bg-[#181824] mx-auto absolute left-0 hidden md:block"></div>
+            {/* <div className="h-24 w-full mx-auto absolute left-0 hidden md:block"></div> */}
+            {/* featured on*/}
+            <FeaturedOn />
         </div>
     );
 };

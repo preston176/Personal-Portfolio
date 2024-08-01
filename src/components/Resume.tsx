@@ -18,9 +18,9 @@ const Resume = () => {
     },]
 
     return (
-        <div className=" text-primary font-semibold min-h-fit">
+        <div className=" text-primary font-semibold min-h-fit px-5">
             <div className="container mx-auto py-10">
-                <h1 className=" text-3xl mt-5  font-semibold mb-8">My Resume</h1>
+                <h1 className=" text-3xl mt-5 font-semibold mb-8">My Resume</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 gap-10 relative">
                     {/* Education Section */}
                     <div className="relative">

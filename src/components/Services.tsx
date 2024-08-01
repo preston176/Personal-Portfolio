@@ -10,7 +10,7 @@ interface Service {
 
 const Services = () => {
     return (
-        <div >
+        <div className='px-5'>
             <h2 className='text-primary font-semibold text-3xl mt-14'>
                 The services that I offer
             </h2>
@@ -31,7 +31,6 @@ const Services = () => {
 
                 }
             </div>
-
         </div>
     );
 };

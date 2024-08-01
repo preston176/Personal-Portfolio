@@ -17,7 +17,7 @@ const Blogs = () => {
         // totalDocs,
         // loadMorePost,
         posts,
-         } = useHashnodePosts(settings);
+    } = useHashnodePosts(settings);
 
 
     interface posts {
@@ -32,7 +32,7 @@ const Blogs = () => {
     console.log(posts)
 
     return (
-        <div className=' propx-7 md:px-10 my-8 min-h-fit' id='blogs'>
+        <div className=' px-7 md:px-10 my-8 min-h-fit' id='blogs'>
             <h1 className='text-3xl mt-5 text-primary font-semibold'>Blogs</h1>
             <p className='text-white my-2 md:w-2/3 leading-[2]'>Checkout some of my featured articles</p>
             {/* project items */}
@@ -53,7 +53,7 @@ const Blogs = () => {
                     <><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 my-6 items-center justify-center">
                         {
                             posts.map((post: posts) =>
-                                <div key={crypto.randomUUID()} className='project-card flex flex-col shadow-sm md:w-[343px] bg-[#31313f] rounded p-4 gap-5'>
+                                <div key={crypto.randomUUID()} className='project-card flex flex-col shadow-sm md:w-[343px] border-white border rounded p-4 gap-5'>
                                     <a href={post.node.url} className='mb-4'>
                                         {post.node.coverImage && post.node.coverImage.url ? (
                                             <img style={{ width: "100%", height: "100%" }} src={post.node.coverImage.url} alt={post.node.title} />

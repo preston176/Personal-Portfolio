@@ -26,7 +26,7 @@ const Header = () => {
             <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
                 {/* img */}
                 <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
-                    <span className="text-primary text-white">Preston Mayieka</span>
+                    <img className='w-28' src="/assets/logos/PrestonM.png" alt="" />
                 </div>
 
                 {/* md: mobile icons */}
