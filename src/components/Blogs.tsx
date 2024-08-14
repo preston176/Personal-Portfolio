@@ -29,7 +29,7 @@ const Blogs = () => {
             // other fields...
         };
     }
-    console.log(posts)
+    // console.log(posts)
 
     return (
         <div className=' px-7 md:px-10 my-8 min-h-fit' id='blogs'>
