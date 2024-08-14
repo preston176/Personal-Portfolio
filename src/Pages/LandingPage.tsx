@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Home from '../components/Home';
 import About from '../components/About';
@@ -55,9 +55,9 @@ const LandingPage = () => {
                 zIndex: "6",
                 left: "initial",
             }}>
-                <a href="https://wa.me/254799078848" target='_blank'>
+                {/* <a href="https://wa.me/254799078848" target='_blank'>
                     <img src={whatsappLogo} width="60" alt="whatsapp logo" />
-                </a>
+                </a> */}
             </div>
             {/* End of back to top */}
             {/* Floating Whatsapp Icon on bottom right */}
