@@ -7,7 +7,7 @@ import Blogs from '../components/Blogs';
 // import Stats from '../components/Stats';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import whatsappLogo from '/assets/icons/WhatsApp_icon.png';
+// import whatsappLogo from '/assets/icons/WhatsApp_icon.png';
 import backToTopIcon from '/assets/icons/back-to-top.png';
 import Resume from '../components/Resume';
 import Services from '../components/Services';
@@ -61,14 +61,14 @@ const LandingPage = () => {
             </div>
             {/* End of back to top */}
             {/* Floating Whatsapp Icon on bottom right */}
-            {/* <div className={`fixed top-0 right-0 mr-3 mb-3 py-2 ${showBackToTop ? 'opacity-95' : 'opacity-0 transition-opacity duration-700'}`} style={{
+       <div className={`fixed top-0 right-0 mr-3 mb-3 py-2 ${showBackToTop ? 'opacity-95' : 'opacity-0 transition-opacity duration-700'}`} style={{
                 zIndex: "6",
                 left: "initial",
             }}>
                 <a href="#">
                     <img src={backToTopIcon} width="60" alt="a back to top logo" />
                 </a>
-            </div> */}
+            </div>
             {/* End of floating whatsapp icon on bottom */}
         </div>
     );
