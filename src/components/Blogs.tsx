@@ -32,8 +32,8 @@ const Blogs = () => {
     // console.log(posts)
 
     return (
-        <div className=' px-7 md:px-10 my-8 min-h-fit' id='blogs'>
-            <h1 className='text-3xl mt-5 text-primary font-semibold'>Blogs</h1>
+        <div className=' px-7 md:px-10 my-8 min-h-fit' id='articles'>
+            <h1 className='text-3xl mt-5 text-primary font-semibold'>Articles</h1>
             <p className='text-white my-2 md:w-2/3 leading-[2]'>Checkout some of my featured articles</p>
             {/* project items */}
             {

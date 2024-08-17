@@ -7,7 +7,7 @@ const Header = () => {
         { name: 'Home', link: '' },
         { name: 'About me', link: 'about' },
         { name: 'Projects', link: 'projects' },
-        { name: 'Articles', link: 'https://codewithpres.hashnode.dev' },
+        { name: 'Articles', link: 'articles' },
         { name: 'Contact me', link: 'contact' },
     ];
 
