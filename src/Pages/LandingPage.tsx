@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Header from '../components/Header';
+import Header from '../components/Header/Header';
 import Home from '../components/Home';
 import About from '../components/About';
 import Projects from '../components/Projects';
@@ -11,6 +11,7 @@ import Footer from '../components/Footer';
 import backToTopIcon from '/assets/icons/back-to-top.png';
 import Resume from '../components/Resume';
 import Services from '../components/Services';
+import Search from '../components/searchcomponents/Search';
 
 
 const LandingPage = () => {
@@ -39,7 +40,8 @@ const LandingPage = () => {
     }, []); // effect runs only once
 
     return (
-        <div>
+        <>
+            <Search />
             <Header />
             <Home />
             <About />
@@ -61,7 +63,7 @@ const LandingPage = () => {
             </div>
             {/* End of back to top */}
             {/* Floating Whatsapp Icon on bottom right */}
-       <div className={`fixed top-0 right-0 mr-3 mb-3 py-2 ${showBackToTop ? 'opacity-95' : 'opacity-0 transition-opacity duration-700'}`} style={{
+            <div className={`fixed top-0 right-0 mr-3 mb-3 py-2 ${showBackToTop ? 'opacity-95' : 'opacity-0 transition-opacity duration-700'}`} style={{
                 zIndex: "6",
                 left: "initial",
             }}>
@@ -70,7 +72,7 @@ const LandingPage = () => {
                 </a>
             </div>
             {/* End of floating whatsapp icon on bottom */}
-        </div>
+        </>
     );
 };
 
