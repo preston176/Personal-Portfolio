@@ -4,7 +4,7 @@ body {
   background: linear-gradient(to top, #1a1a29, #121220, #0a0a17);
 }
 
-.btn1 {
+/* .btn1 {
   background: #7562e0;
   border-radius: 8px;
   padding: 10px 30px;
@@ -22,7 +22,7 @@ body {
 
 .outline:hover {
   outline-color: white;
-}
+} */
 
 .skills:first-child {
   background: #7562e0;
