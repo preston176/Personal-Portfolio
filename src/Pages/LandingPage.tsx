@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import Header from '../components/Header/Header';
 import Home from '../components/Home';
 import About from '../components/About';
@@ -11,12 +11,12 @@ import Footer from '../components/Footer';
 import backToTopIcon from '/assets/icons/back-to-top.png';
 import Resume from '../components/Resume';
 import Services from '../components/Services';
-import Search from '../components/searchcomponents/Search';
+import Search from '../components/Search/Search';
+import { GlobalContext } from '../context/GlobalContext';
 
 
 const LandingPage = () => {
-    const [showBackToTop, setShowBackToTop] = useState<boolean>(false);
-    const [showWhatsApp] = useState<boolean>(true);
+    const { showBackToTop, setShowBackToTop } = useContext(GlobalContext);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -37,7 +37,7 @@ const LandingPage = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []); // effect runs only once
+    }, [setShowBackToTop]); // effect runs only once
 
     return (
         <>
@@ -52,16 +52,7 @@ const LandingPage = () => {
             {/* <Stats /> */}
             <Contact />
             <Footer />
-            {/* Back to top Icon */}
-            <div className={`fixed bottom-0 right-0 mr-3 mb-3 p-0 ${showWhatsApp ? 'opacity-100' : 'opacity-0 transition-opacity duration-500'}`} style={{
-                zIndex: "6",
-                left: "initial",
-            }}>
-                {/* <a href="https://wa.me/254799078848" target='_blank'>
-                    <img src={whatsappLogo} width="60" alt="whatsapp logo" />
-                </a> */}
-            </div>
-            {/* End of back to top */}
+
             {/* Floating Whatsapp Icon on bottom right */}
             <div className={`fixed top-0 right-0 mr-3 mb-3 py-2 ${showBackToTop ? 'opacity-95' : 'opacity-0 transition-opacity duration-700'}`} style={{
                 zIndex: "6",
