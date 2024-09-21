@@ -1,6 +1,6 @@
-type Link = {
-    name: string;
-    link: string;
+export type Link = {
+    name?: string;
+    link?: string;
   };
   
   export const links: Link[] = [
