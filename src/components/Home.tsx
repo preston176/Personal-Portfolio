@@ -13,11 +13,11 @@ const Home = () => {
                     <h1 className='font-semibold text-3xl md:text-5xl my-4'>
                         <Typewriter
                             options={{
-                                strings: ['Preston Mayieka'],
+                                strings: ['Preston Mayieka', 'Preston'],
                                 autoStart: true,
-                                loop: false,
+                                loop: true,
                                 delay: 100,
-                                deleteSpeed: 2000
+                                deleteSpeed: 250
 
                             }}
                         />
@@ -27,7 +27,7 @@ const Home = () => {
                     <p className='md:w-96'>I am a
                         <Typewriter
                             options={{
-                                strings: ['Web developer', 'Computer scientist', 'Tech Enthusiast', 'Open-Source Contributer'],
+                                strings: ['Web developer', 'Computer Scientist', 'Tech Enthusiast', 'Open-Source Contributer'],
                                 autoStart: true,
                                 loop: true,
                                 delay: 60,
