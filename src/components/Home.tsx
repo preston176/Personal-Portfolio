@@ -15,9 +15,10 @@ const Home = () => {
                             options={{
                                 strings: ['Preston Mayieka'],
                                 autoStart: true,
-                                loop: true,
+                                loop: false,
                                 delay: 100,
-                                deleteSpeed: 250
+                                deleteSpeed: 2000
+
                             }}
                         />
 
@@ -29,8 +30,8 @@ const Home = () => {
                                 strings: ['Web developer', 'Computer scientist', 'Tech Enthusiast', 'Open-Source Contributer'],
                                 autoStart: true,
                                 loop: true,
-                                delay: 75,
-                                deleteSpeed: 100
+                                delay: 60,
+                                deleteSpeed: 60
                             }} />
 
                     </p>
