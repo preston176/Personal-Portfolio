@@ -28,8 +28,9 @@ const Search = () => {
             onClick={() => setSearch(false)} // Close search when clicking outside
         >
             <div
-                className="pt-[20vh] w-[50%] mx-auto flex flex-col items-center min-w-[200px] max-h-[100vh]"
-                onClick={(e) => e.stopPropagation()} // Prevent close when clicking inside
+                className="mt-[20vh] w-[50%] mx-auto flex flex-col items-center min-w-[200px] max-h-[100vh]"
+                // Prevent close when clicking inside
+                onClick={(e) => e.stopPropagation()}
             >
                 <SearchBar />
             </div>
