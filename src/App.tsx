@@ -5,7 +5,7 @@ import LandingPage from "./Pages/LandingPage";
 import { GlobalContext } from "./context/GlobalContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import NotFound from "./Pages/NotFound";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 function App() {
@@ -14,6 +14,20 @@ function App() {
   const [search, setSearch] = useState<boolean>(false);
   const [open, setOpen] = useState<boolean>(false);
 
+  const keyDownHandler = (event: KeyboardEvent) => {
+    if (event.ctrlKey && event.key === "k") {
+      event.preventDefault();
+      // console.log("You just pressed Control and K!");
+      setSearch(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("keydown", keyDownHandler);
+    return () => {
+      window.removeEventListener("keydown", keyDownHandler);
+    };
+  });
 
   return (
     <BrowserRouter>
