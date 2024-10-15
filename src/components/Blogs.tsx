@@ -54,7 +54,7 @@ const Blogs = () => {
                         {
                             posts.map((post: posts) =>
                                 <div key={crypto.randomUUID()} className='project-card flex flex-col shadow-sm md:w-[343px] border-white border rounded p-4 gap-5'>
-                                    <a href={post.node.url} className='mb-4'>
+                                    <a href={post.node.url} target="_blank" className='mb-4'>
                                         {post.node.coverImage && post.node.coverImage.url ? (
                                             <img style={{ width: "100%", height: "100%" }} src={post.node.coverImage.url} alt={post.node.title} />
                                         ) : (
@@ -65,7 +65,7 @@ const Blogs = () => {
                                     <p className='text-white mt-1 text-clip overflow-hidden ... line-clamp-2 '>{post.node.brief}</p>
                                     {/* btns */}
                                     <div className="mt-5">
-                                        <a href={post.node.url}> <button className='btn bg-white py-2 px-4 text-black rounded hover:bg-black hover:text-white transition-all duration-500'>Read More</button></a>
+                                        <a href={post.node.url} target="_blank"> <button className='btn bg-white py-2 px-4 text-black rounded hover:bg-black hover:text-white transition-all duration-500'>Read More</button></a>
                                         {/* <a href={project.repoURL}> <button className='btn outline px-5 py-1.5 rounded border-none text-white ml-5'>Git Repo</button></a> */}
                                     </div>
 
