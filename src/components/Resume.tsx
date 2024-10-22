@@ -15,6 +15,12 @@ const Resume = () => {
         place_of_work: "South Nyanza, Kenya",
         duration: "May 2024 - July 2024",
         description: " Gained Practical Experience on Data Networks(Fiber Optics,VHF Radios), End User ICT-Support, Power Systems Communication"
+    },
+    {
+        position: "Content Writer",
+        place_of_work: "Remote",
+        duration: "Aug 2024 - Present",
+        description: " As a Content Writer at freeCodeCamp, I craft engaging articles on Web Development, harnessing my technical expertise and SEO proficiency to reach a wide audience."
     },]
 
     return (
