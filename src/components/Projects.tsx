@@ -3,12 +3,12 @@
 const Projects = () => {
   const projectsData = [
     {
-      title: "MarketHUB",
-      description: "An online fully functional e-commerce website",
-      photo: "/images/projects/markethub.png",
-      liveURL: "https://markethub-f6f5e.web.app/",
-      repoURL: "https://github.com/preston176/ShopMART-E-commerce",
-      altText: "An image of MarketHUB project"
+      title: "YTDL- Youtube Downloader",
+      description: "Download your Favourite YouTube videos and music for Free. No Ads.",
+      photo: "/images/projects/ytdl.png",
+      liveURL: "https://ytdl-next.vercel.app",
+      repoURL: "https://github.com/preston176/ytdl-next",
+      altText: "An image of YTDL project"
     },
     {
       title: "AI Image Generator App",
