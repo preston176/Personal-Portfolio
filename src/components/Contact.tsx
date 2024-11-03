@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import SocialIcons from './SocialIconsContainer';
+// import SocialIcons from './SocialIconsContainer';
 
 const Contact = () => {
   const [state] = useForm("mjvngnoq");
