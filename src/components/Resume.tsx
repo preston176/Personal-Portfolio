@@ -22,7 +22,7 @@ const Resume = () => {
             position: "Information Technology Intern - Elite Global Technologies",
             place_of_work: "Lagos, Nigeria (Remote)",
             duration: "Oct 2024 - Present",
-            description: "I am undergoing training in artificial intelligence applications, particularly focusing on tools: WatsonX.ai."
+            description: "I am undergoing training in artificial intelligence applications, particularly focusing on tools: WatsonX.ai in enhancing Information Technology"
         },
         {
             position: "Content Writer",
