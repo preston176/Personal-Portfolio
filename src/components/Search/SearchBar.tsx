@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { FaSearch } from "react-icons/fa"
+import { FaBackspace, FaSearch } from "react-icons/fa"
 import SearchResults from "./SearchResults";
 import { Link, links } from "../Header/Links";
 
@@ -15,16 +15,21 @@ const SearchBar = () => {
         );
         setResults(filteredResults);
     };
+
+    const handleErase = () => {
+        setInput('')
+        setResults(links)
+    }
     return (
         <>
             <div className='bg-[#1a1a29] w-[100%] rounded-md h-[2.5rem] flex items-center shadow-2xl px-4'>
-                <FaSearch color="white"/>
+                <FaSearch color="white" size={25} />
                 <input placeholder="Type To Search ..." className="bg-transparent border-none h-[100%] w-[100%] ml-[12px] outline-none  text-white"
                     value={input}
                     onChange={(e) => handleChange(e.target.value)}
                 />
 
-
+                <FaBackspace color="white" size={25} onClick={handleErase} />
             </div>
             <SearchResults results={results} />
         </>
