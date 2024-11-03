@@ -13,9 +13,9 @@ const About = () => {
 
     // calculate years of experience
 
-    const startDate = new Date(2022, 0, 1); // January 1, 2022
-    const currentDate = new Date();
-    const yearsOfExperience = currentDate.getFullYear() - startDate.getFullYear();
+    // const startDate = new Date(2022, 0, 1); // January 1, 2022
+    // const currentDate = new Date();
+    // const yearsOfExperience = currentDate.getFullYear() - startDate.getFullYear();
 
     return (
         <div className='py-2 md:px-5 px-5 sm:mt-24' id='about'>
