@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 // import whatsappLogo from '/assets/icons/WhatsApp_icon.png';
 import backToTopIcon from '/assets/icons/back-to-top.png';
 import Resume from '../components/Resume';
-import Services from '../components/Services';
+// import Services from '../components/Services';
 import Search from '../components/Search/Search';
 import { GlobalContext } from '../context/GlobalContext';
 
