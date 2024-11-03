@@ -8,20 +8,34 @@ const Resume = () => {
             duration: "2021 - Present",
             descrtiption: ""
         },
+        {
+            education: "ALX Software Engineering Essentials",
+            institution: "ALX Africa",
+            place_of_study: "Nairobi, Kenya",
+            duration: "Sept 2024 - Dec 2024 ",
+            descrtiption: ""
+        },
     ]
 
-    const EXPERIENCE_DATA = [{
-        position: "Kenya Power And Lighting Company Trainee",
-        place_of_work: "South Nyanza, Kenya",
-        duration: "May 2024 - July 2024",
-        description: " Gained Practical Experience on Data Networks(Fiber Optics,VHF Radios), End User ICT-Support, Power Systems Communication"
-    },
-    {
-        position: "Content Writer",
-        place_of_work: "Remote",
-        duration: "Aug 2024 - Present",
-        description: " As a Content Writer at freeCodeCamp, I craft engaging articles on Web Development, harnessing my technical expertise and SEO proficiency to reach a wide audience."
-    },]
+    const EXPERIENCE_DATA = [
+        {
+            position: "Information Technology Intern - Elite Global Technologies",
+            place_of_work: "Lagos, Nigeria (Remote)",
+            duration: "Oct 2024 - Present",
+            description: "I am undergoing training in artificial intelligence applications, particularly focusing on tools: WatsonX.ai."
+        },
+        {
+            position: "Content Writer",
+            place_of_work: "Remote",
+            duration: "Aug 2024 - Present",
+            description: " As a Content Writer at freeCodeCamp, I craft engaging articles on Web Development, harnessing my technical expertise and SEO proficiency to reach a wide audience."
+        }, {
+            position: "Kenya Power And Lighting Company Trainee",
+            place_of_work: "South Nyanza, Kenya (On-site)",
+            duration: "May 2024 - July 2024",
+            description: " Gained Practical Experience on Data Networks(Fiber Optics,VHF Radios), End User ICT-Support, Power Systems Communication"
+        }
+    ]
 
     return (
         <div className=" text-primary font-semibold min-h-fit px-5">
