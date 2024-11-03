@@ -23,3 +23,9 @@ html.dark-mode {
 ::-webkit-scrollbar-track {
   display: none;
 }
+
+/* Splide css */
+
+.splide__pagination {
+  margin: -40px 0;
+}
