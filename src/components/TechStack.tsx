@@ -5,6 +5,8 @@ import '@splidejs/react-splide/css/skyblue';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt } from 'react-icons/fa';
 import { SiMongodb, SiExpress, SiTailwindcss, SiPostgresql } from 'react-icons/si';
 import { IoLogoFirebase } from 'react-icons/io5';
+import { FaPython } from 'react-icons/fa6';
+import { PiFileCSharp } from 'react-icons/pi';
 
 interface Tech {
     name: string;
@@ -24,7 +26,9 @@ const TechStack: React.FC = () => {
         { name: 'JavaScript', icon: <FaJsSquare />, color: '#F0DB4F' },
         { name: 'Git', icon: <FaGitAlt />, color: '#F1502F' },
         { name: 'Tailwind', icon: <SiTailwindcss />, color: '#38B2AC' },
-        { name: 'PostgreSQL', icon: <SiPostgresql />, color: '#336791' }
+        { name: 'PostgreSQL', icon: <SiPostgresql />, color: '#336791' },
+        {name: 'Python', icon: <FaPython />, color: '#264de4'},
+        {name: 'C#', icon: <PiFileCSharp />, color: '#336791'},
     ];
     
 
