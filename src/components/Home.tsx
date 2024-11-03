@@ -2,6 +2,7 @@
 import { Link } from 'react-scroll';
 // import FeaturedOn from './FeaturedOn';
 import TechStack from './TechStack';
+import SocialIcons from './SocialIconsContainer';
 
 const Home = () => {
     return (
@@ -46,7 +47,9 @@ const Home = () => {
                 <div className="order-first md:order-last relative">
                     {/* <img src={heroImg} alt="" /> */}
                 </div>
-
+            </div>
+            <div className="flex mt-4 -ml-4 md:-mb-20">
+                <SocialIcons />
             </div>
             {/* separator */}
             {/* <div className="h-24 w-full mx-auto absolute left-0 hidden md:block"></div> */}

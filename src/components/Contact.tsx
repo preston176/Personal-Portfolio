@@ -66,7 +66,7 @@ const Contact = () => {
                         <p className='text-white my-2 md:w-2/3 leading-[2]'>
                             {/* social icons */}
                             <div className="flex mx-2 hover:cursor-pointer">
-                                <SocialIcons />
+                                {/* <SocialIcons /> */}
                             </div>
                         </p>
                     </div>
