@@ -1,7 +1,7 @@
-import Typewriter from 'typewriter-effect';
 // import heroImg from '../assets/img2.png';
 import { Link } from 'react-scroll';
-import FeaturedOn from './FeaturedOn';
+// import FeaturedOn from './FeaturedOn';
+import TechStack from './TechStack';
 
 const Home = () => {
     return (
@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="text-white">
                     <h5 className='text-3xl mt-12'>Hello there, I'm</h5>
                     <h1 className='font-semibold text-3xl md:text-5xl my-4'>
-                        <Typewriter
+                        {/* <Typewriter
                             options={{
                                 strings: ['Preston Mayieka', 'Preston'],
                                 autoStart: true,
@@ -20,20 +20,20 @@ const Home = () => {
                                 deleteSpeed: 250
 
                             }}
-                        />
-
+                        /> */}
+                        Preston Mayieka
                     </h1>
 
-                    <p className='md:w-96'>I am a
-                        <Typewriter
+                    <p className='md:w-96'>I am a {''}
+                        {/* <Typewriter
                             options={{
                                 strings: ['Web developer', 'Computer Scientist', 'Tech Enthusiast', 'Open-Source Contributer'],
                                 autoStart: true,
                                 loop: true,
                                 delay: 60,
                                 deleteSpeed: 60
-                            }} />
-
+                            }} /> */}
+                        Front-End Developer
                     </p>
                     {/* buttons section */}
                     <div className="mt-5">
@@ -51,7 +51,8 @@ const Home = () => {
             {/* separator */}
             {/* <div className="h-24 w-full mx-auto absolute left-0 hidden md:block"></div> */}
             {/* featured on*/}
-            <FeaturedOn />
+            {/* <FeaturedOn /> */}
+            <TechStack />
         </div>
     );
 };

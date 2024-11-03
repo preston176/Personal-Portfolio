@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: "YTDL- Youtube Downloader",
       description: "Download your Favourite YouTube videos and music for Free. No Ads.",
-      photo: "/images/projects/ytdl.png",
+      photo: "/images/projects/ytdl.PNG",
       liveURL: "https://ytdl-next.vercel.app",
       repoURL: "https://github.com/preston176/ytdl-next",
       altText: "An image of YTDL project"
