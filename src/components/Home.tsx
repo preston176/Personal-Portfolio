@@ -34,7 +34,7 @@ const Home = () => {
                                 delay: 60,
                                 deleteSpeed: 60
                             }} /> */}
-                        Front-End Developer
+                        Full-Stack Developer
                     </p>
                     {/* buttons section */}
                     <div className="mt-5">
