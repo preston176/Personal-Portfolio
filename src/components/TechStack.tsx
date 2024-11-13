@@ -2,8 +2,8 @@
 import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiTailwindcss, SiPostgresql } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaJsSquare, FaGitAlt, FaDocker } from 'react-icons/fa';
+import { SiMongodb, SiExpress, SiTailwindcss, SiPostgresql, SiUnity, SiFigma, SiNextdotjs, SiGraphql, SiAdobexd, SiGooglecloud } from 'react-icons/si';
 import { IoLogoFirebase } from 'react-icons/io5';
 import { FaPython } from 'react-icons/fa6';
 import { PiFileCSharp } from 'react-icons/pi';
@@ -17,20 +17,26 @@ interface Tech {
 const TechStack: React.FC = () => {
     const techs: Tech[] = [
         { name: 'React', icon: <FaReact />, color: '#61DBFB' },
-        { name: 'Firebase', icon: <IoLogoFirebase />, color: '#FFA611' },
+        { name: 'Next.js', icon: <SiNextdotjs />, color: '#ffffff' },
+        { name: 'GraphQL', icon: <SiGraphql />, color: '#E10098' }, 
         { name: 'Node.js', icon: <FaNodeJs />, color: '#68A063' },
-        { name: 'Express', icon: <SiExpress />, color: '#303030' },
+        { name: 'Express', icon: <SiExpress />, color: '#ffffff' },
         { name: 'MongoDB', icon: <SiMongodb />, color: '#4DB33D' },
-        { name: 'HTML5', icon: <FaHtml5 />, color: '#E34C26' },
-        { name: 'CSS3', icon: <FaCss3Alt />, color: '#264de4' },
+        { name: 'PostgreSQL', icon: <SiPostgresql />, color: '#336791' },
+        { name: 'TypeScript', icon: <FaReact />, color: '#3178C6' }, // Strongly typed JS, professional best practice
         { name: 'JavaScript', icon: <FaJsSquare />, color: '#F0DB4F' },
         { name: 'Git', icon: <FaGitAlt />, color: '#F1502F' },
-        { name: 'Tailwind', icon: <SiTailwindcss />, color: '#38B2AC' },
-        { name: 'PostgreSQL', icon: <SiPostgresql />, color: '#336791' },
-        {name: 'Python', icon: <FaPython />, color: '#264de4'},
-        {name: 'C#', icon: <PiFileCSharp />, color: '#336791'},
+        { name: 'Docker', icon: <FaDocker />, color: '#2496ED' }, // For containerization
+        { name: 'Google Cloud', icon: <SiGooglecloud />, color: '#FF9900' },
+        { name: 'Firebase', icon: <IoLogoFirebase />, color: '#FFA611' },
+        { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: '#38B2AC' },
+        { name: 'Figma', icon: <SiFigma />, color: '#CA5151' },
+        { name: 'Adobe XD', icon: <SiAdobexd />, color: '#FF61F6' }, 
+        { name: 'Unity', icon: <SiUnity />, color: '#ffffff' },
+        { name: 'Python', icon: <FaPython />, color: '#306998' }, 
+        { name: 'C#', icon: <PiFileCSharp />, color: '#5E2BFF' },
     ];
-    
+
 
     return (
         <section className="py-12 bg-none text-center">

@@ -38,15 +38,34 @@ const Blogs = () => {
             {/* project items */}
             {
                 !error && loading ? (
-                    <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50">
-                        <div className='text-center'>
-                            <RotatingLines
-                                visible={true}
-                                width="96"
-                                strokeWidth="5"
-                                animationDuration="0.75"
-                                ariaLabel="rotating-lines-loading"
-                            />
+                    <div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 my-6 items-center justify-center animate-pulse">
+                            <div className='project-card flex flex-col shadow-sm md:w-[343px] border-white border rounded p-4 gap-5'>
+                                <div className="h-48 bg-gray-200 mb-4"></div>
+                                <div className='h-5 bg-gray-200 w-1/2'></div>
+                                <div className='h-8 bg-gray-200 mt-1'></div>
+                                <div className="h-8 bg-gray-200 mt-5">
+                                </div>
+                            </div>
+                            <div className='project-card flex flex-col shadow-sm md:w-[343px] border-white border rounded p-4 gap-5'>
+                                <div className="h-48 bg-gray-200 mb-4"></div>
+                                <div className='h-5 bg-gray-200 w-1/2'></div>
+                                <div className='h-8 bg-gray-200 mt-1'></div>
+                                <div className="h-8 bg-gray-200 mt-5">
+                                </div>
+                            </div>
+                            <div className='project-card flex flex-col shadow-sm md:w-[343px] border-white border rounded p-4 gap-5'>
+                                <div className="h-48 bg-gray-200 mb-4"></div>
+                                <div className='h-5 bg-gray-200 w-1/2'></div>
+                                <div className='h-8 bg-gray-200 mt-1'></div>
+                                <div className="h-8 bg-gray-200 mt-5">
+                                </div>
+                            </div>
+                 
+                        </div>
+                        <div className="flex justify-center mt-8 animate-pulse">
+                            <div className="h-8 bg-gray-200 w-56 ml-5">
+                            </div>
                         </div>
                     </div>
                 ) : (
