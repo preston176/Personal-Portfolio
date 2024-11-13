@@ -1,5 +1,3 @@
-
-import { RotatingLines } from 'react-loader-spinner';
 import useHashnodePosts from './../hooks/useHashnodePosts';
 
 
