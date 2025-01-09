@@ -3,6 +3,14 @@
 const Projects = () => {
   const projectsData = [
     {
+      title: "Nexus AI",
+      description: "Nexus AI is an innovative platform designed to empower users by securely storing their documents and providing intelligent, document-based responses",
+      photo: "/images/projects/nexusai.PNG",
+      liveURL: "https://nexusai-pdf.vercel.app/",
+      repoURL: "https://github.com/preston176/nexusAI",
+      altText: "An image of NexusAI project"
+    },
+    {
       title: "YTDL- Youtube Downloader",
       description: "Download your Favourite YouTube videos and music for Free. No Ads.",
       photo: "/images/projects/ytdl.PNG",
@@ -10,22 +18,14 @@ const Projects = () => {
       repoURL: "https://github.com/preston176/ytdl-next",
       altText: "An image of YTDL project"
     },
-    {
-      title: "AI Image Generator App",
-      description: "AI Image Generator App In React Using OpenAI",
-      photo: "/images/projects/AIGEN.png",
-      liveURL: "https://ai-gen-sable.vercel.app/",
-      repoURL: "https://github.com/preston176/AI-Gen",
-      altText: "An image of AI Image Generator project"
-    },
 
     {
-      title: "Jobify",
-      description: "A platform where you can be able to easily post or find jobs",
-      photo: "/images/projects/jobify.png",
-      liveURL: "https://jobify-app-3o5e.onrender.com/",
-      repoURL: "https://github.com/preston176/jobify",
-      altText: "An image of Jobify project"
+      title: "PostmanToOpenAPIConverter",
+      description: "Convert Postman collections to OpenSpecAPI",
+      photo: "/images/projects/postmanopenspec.png",
+      liveURL: "https://postmantoopenapiconverter.netlify.app/",
+      repoURL: "https://github.com/preston176/PostmanToOpenAPIConverter",
+      altText: "An image of my collaborative Project"
     },
   ]
 
