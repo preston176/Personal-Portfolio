@@ -28,9 +28,7 @@ body {
   background: #7562e0;
 }
 
-.skills:first-child:hover {
-  background: #bdbdbd;
-}
+
 .service-card {
   width: auto;
   height: 338px;
@@ -43,25 +41,12 @@ body {
 .service-card {
   transition: 0.25s;
 }
-.service-card:hover {
-  transform: scale(1.05);
-  background-color: #6655b7;
-  border: none !important;
-  outline: none;
-  box-shadow: -2px 3px 43px 13px #7562e0;
-  transition: all 0.15s ease-in-out;
-}
+
 
 .project-card {
   transition: 0.25s;
 }
 /* hover effect on projects card */
-.project-card:hover {
-  transform: scale(1.05);
-  box-shadow: -2px 3px 43px 13px #7562e0;
-  background-color: #6655b7;
-  transition: all 0.25s ease-in-out;
-}
 
 .service-card:nth-child(even) {
   border: 3px solid white;
