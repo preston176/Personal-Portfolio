@@ -29,21 +29,21 @@ const Resume = () => {
             place_of_work: "Lagos, Nigeria (Remote)",
             duration: "Oct 2024 - Present",
             description:
-                "Undergoing training in AI applications, focusing on tools like WatsonX.ai to enhance IT operations.",
+                "",
         },
         {
             position: "Content Writer",
             place_of_work: "Remote",
             duration: "Aug 2024 - Present",
             description:
-                "Crafting engaging web development articles for freeCodeCamp, leveraging technical expertise and SEO skills.",
+                "",
         },
         {
             position: "Kenya Power And Lighting Company Trainee",
             place_of_work: "South Nyanza, Kenya (On-site)",
             duration: "May 2024 - July 2024",
             description:
-                "Gained practical experience with Data Networks (Fiber Optics, VHF Radios), End User ICT-Support, and Power Systems Communication.",
+                "",
         },
     ];
 
