@@ -21,7 +21,6 @@ const Resume = () => {
             duration: "Sept 2023 - Dec 2024",
             description: "",
         },
-
     ];
 
     const EXPERIENCE_DATA = [
@@ -62,10 +61,15 @@ const Resume = () => {
                                 className="mb-0 pb-5 border-l-2 border-primary pl-5 relative"
                             >
                                 <div className="absolute left-0 -ml-2 w-4 h-4 bg-gray-900 border-2 border-primary rounded-full"></div>
-                                <h3 className="text-xl font-semibold mb-2">{edu.education}</h3>
-                                <p className="text-gray-400 mb-1">{edu.duration}</p>
-                                <p className="text-lg font-medium mb-1">{edu.institution}</p>
-                                <p className="text-lg font-semibold mb-3">{edu.place_of_study}</p>
+                                {/* Degree/Title */}
+                                <h3 className="text-2xl font-bold mb-2">{edu.education}</h3>
+                                {/* Institution */}
+                                <p className="text-xl font-medium mb-1 text-gray-700">{edu.institution}</p>
+                                {/* Place of Study */}
+                                <p className="text-lg font-normal mb-1 text-gray-500">{edu.place_of_study}</p>
+                                {/* Duration */}
+                                <p className="text-base font-light mb-3 text-gray-400">{edu.duration}</p>
+                                {/* Description */}
                                 <p className="text-gray-500">{edu.description}</p>
                             </div>
                         ))}
@@ -80,9 +84,13 @@ const Resume = () => {
                                 className="mb-0 pb-5 border-l-2 border-primary pl-5 relative"
                             >
                                 <div className="absolute left-0 -ml-2 w-4 h-4 bg-gray-900 border-2 border-primary rounded-full"></div>
-                                <h3 className="text-xl font-semibold mb-2">{exp.position}</h3>
-                                <p className="text-gray-400 mb-1">{exp.duration}</p>
-                                <p className="text-lg font-semibold mb-1">{exp.place_of_work}</p>
+                                {/* Position */}
+                                <h3 className="text-2xl font-bold mb-2">{exp.position}</h3>
+                                {/* Place of Work */}
+                                <p className="text-xl font-medium mb-1 text-gray-700">{exp.place_of_work}</p>
+                                {/* Duration */}
+                                <p className="text-base font-light mb-3 text-gray-400">{exp.duration}</p>
+                                {/* Description */}
                                 <p className="text-gray-500">{exp.description}</p>
                             </div>
                         ))}

@@ -20,7 +20,7 @@ const Projects = () => {
     },
 
     {
-      title: "PostmanToOpenAPIConverter",
+      title: "Postman To OpenAPI Converter",
       description: "Convert Postman collections to OpenSpecAPI",
       photo: "/images/projects/postmanopenspec.png",
       liveURL: "https://postmantoopenapiconverter.netlify.app/",
