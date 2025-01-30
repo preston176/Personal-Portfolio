@@ -18,7 +18,7 @@ const TechStack: React.FC = () => {
     const techs: Tech[] = [
         { name: 'React', icon: <FaReact />, color: '#61DBFB' },
         { name: 'Next.js', icon: <SiNextdotjs />, color: '#ffffff' },
-        { name: 'GraphQL', icon: <SiGraphql />, color: '#E10098' }, 
+        { name: 'GraphQL', icon: <SiGraphql />, color: '#E10098' },
         { name: 'Node.js', icon: <FaNodeJs />, color: '#68A063' },
         { name: 'Express', icon: <SiExpress />, color: '#ffffff' },
         { name: 'MongoDB', icon: <SiMongodb />, color: '#4DB33D' },
@@ -31,15 +31,15 @@ const TechStack: React.FC = () => {
         { name: 'Firebase', icon: <IoLogoFirebase />, color: '#FFA611' },
         { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: '#38B2AC' },
         { name: 'Figma', icon: <SiFigma />, color: '#CA5151' },
-        { name: 'Adobe XD', icon: <SiAdobexd />, color: '#FF61F6' }, 
+        { name: 'Adobe XD', icon: <SiAdobexd />, color: '#FF61F6' },
         { name: 'Unity', icon: <SiUnity />, color: '#ffffff' },
-        { name: 'Python', icon: <FaPython />, color: '#306998' }, 
+        { name: 'Python', icon: <FaPython />, color: '#306998' },
         { name: 'C#', icon: <PiFileCSharp />, color: '#5E2BFF' },
     ];
 
 
     return (
-        <section className="py-12 bg-none text-center">
+        <section className="py-12 bg-none text-center md:mt-44 lg:mt-16">
             <h2 className="text-3xl font-semibold mb-8 text-primary">My Stack</h2>
 
             {/* Conditionally render Splide for mobile screens */}
@@ -56,7 +56,7 @@ const TechStack: React.FC = () => {
                 >
                     {techs.map((tech, index) => (
                         <SplideSlide key={index}>
-                            <div className="flex flex-col items-center text-center w-24 hover:scale-110 transition-transform">
+                            <div className="flex flex-col items-center text-center w-24">
                                 <div className="text-5xl" style={{ color: tech.color }}>
                                     {tech.icon}
                                 </div>
@@ -73,7 +73,7 @@ const TechStack: React.FC = () => {
                 {techs.map((tech, index) => (
                     <div
                         key={index}
-                        className="flex flex-col items-center text-center w-24 hover:scale-110 transition-transform"
+                        className="flex flex-col items-center text-center w-24"
                     >
                         <div className="text-5xl" style={{ color: tech.color }}>
                             {tech.icon}
