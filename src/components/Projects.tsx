@@ -4,7 +4,7 @@ const Projects = () => {
   const projectsData = [
     {
       title: "Nexus AI",
-      description: "Nexus AI is an innovative platform designed to empower users by securely storing their documents and providing intelligent, document-based responses",
+      description: "Securely store and chat with your Documents efficiently",
       photo: "/images/projects/nexusai.PNG",
       liveURL: "https://nexusai-pdf.vercel.app/",
       repoURL: "https://github.com/preston176/nexusAI",
@@ -33,7 +33,7 @@ const Projects = () => {
   return (
     <div className='px-7 md:px-10 my-8' id='projects'>
       <h1 className='text-3xl mt-5 text-primary font-semibold'>Projects</h1>
-      <p className='text-white my-2 md:w-2/3 leading-[2]'>I have worked on a number of projects ... checkout some of my featured projects</p>
+      {/* <p className='text-white my-2 md:w-2/3 leading-[2]'>I have worked on a number of projects ... checkout some of my featured projects</p> */}
       {/* project items */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 my-6 items-center justify-center">
         {

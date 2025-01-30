@@ -36,6 +36,9 @@ const Home = () => {
                             }} /> */}
                         Full-Stack Developer
                     </p>
+                    <p className='md:w-96'>From {''}
+                        Eldoret, Kenya
+                    </p>
                     {/* buttons section */}
                     <div className="mt-5">
                         <Link to="about" className='active'>

@@ -1,7 +1,7 @@
 import { useEffect, useContext } from 'react';
 import Header from '../components/Header/Header';
 import Home from '../components/Home';
-import About from '../components/About';
+// import About from '../components/About';
 import Projects from '../components/Projects';
 import Blogs from '../components/Blogs';
 // import Stats from '../components/Stats';
@@ -11,7 +11,6 @@ import Footer from '../components/Footer';
 import backToTopIcon from '/assets/icons/back-to-top.png';
 import Resume from '../components/Resume';
 // import Services from '../components/Services';
-import Search from '../components/Search/Search';
 import { GlobalContext } from '../context/GlobalContext';
 
 
@@ -41,10 +40,9 @@ const LandingPage = () => {
 
     return (
         <>
-            <Search />
             <Header />
             <Home />
-            <About />
+            {/* <About /> */}
             <Resume />
             {/* <Services /> */}
             <Projects />

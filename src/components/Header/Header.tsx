@@ -1,22 +1,11 @@
-import { useContext } from 'react';
+
 import { Link } from 'react-scroll';
 import { FaSearch } from 'react-icons/fa';
 import { links } from './Links';
-import { GlobalContext } from '../../context/GlobalContext';
+
 
 
 const Header = () => {
-    const { setOpen, setSearch } = useContext(GlobalContext);
-
-
-    const toggleMenu = () => {
-        setSearch(true);
-    };
-
-    const closeMenu = () => {
-        setSearch(false);
-        setOpen(false); // Function to close the mobile menu
-    };
 
     return (
         <div className="w-full max-w-7xl">
@@ -27,7 +16,7 @@ const Header = () => {
                 </div>
 
                 {/* Mobile menu icon */}
-                <div
+                {/* <div
                     onClick={toggleMenu}
                     className="w-7 h-7 right-8 top-6 cursor-pointer md:hidden text-white absolute z-10"
                     aria-label="Open search"
@@ -36,26 +25,16 @@ const Header = () => {
                         color='white'
                         size={20}
                     />
-                </div>
+                </div> */}
 
                 {/* Navbar */}
-                <ul className={`md:flex md:items-center md:static hidden md:w-auto w-full left-0 transition-all duration-500 ease-in-out z-10`}>
+                <ul className={`md:flex md:items-center md:static hidden md:w-auto w-full left-0 transition-all duration-500 ease-in-out z-10 cursor-pointer`}>
                     {/* Search Icon */}
-                    <li className="md:ml-8 md:my-0 my-7">
-                        <FaSearch
-                            color='white'
-                            size={20}
-                            className="cursor-pointer"
-                            onClick={() => setSearch(true)}
-                            aria-label="Open search"
-                        />
-                    </li>
 
                     {links.map((item, index) => (
                         <li
                             key={index}
                             className="md:ml-8 md:my-0 my-7 font-semibold"
-                            onClick={closeMenu} // Close mobile menu when a link is clicked
                         >
                             {item.link?.startsWith('http') ? (
                                 <a
@@ -73,7 +52,7 @@ const Header = () => {
                                     smooth={true}
                                     offset={-70} // Offset for sticky header
                                     duration={500}
-                                    onClick={closeMenu} // Close menu when link is clicked
+                                
                                 >
                                     {item.name}
                                 </Link>
