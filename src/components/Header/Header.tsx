@@ -1,6 +1,5 @@
 
 import { Link } from 'react-scroll';
-import { FaSearch } from 'react-icons/fa';
 import { links } from './Links';
 
 
