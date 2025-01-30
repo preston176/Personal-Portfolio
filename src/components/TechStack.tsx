@@ -49,7 +49,7 @@ const TechStack: React.FC = () => {
                         type: 'loop',
                         perPage: 3,
                         gap: '1rem',
-                        arrows: true,
+                        arrows: false,
                         pagination: true,
                         drag: true,
                     }}
