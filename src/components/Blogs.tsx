@@ -6,7 +6,7 @@ const Blogs = () => {
 
     const settings = {
         host: "codewithpres.hashnode.dev",
-        first: 6,
+        first: 3,
     };
     const {
         loading,
@@ -32,7 +32,7 @@ const Blogs = () => {
     return (
         <div className=' px-7 md:px-10 my-8 min-h-fit' id='articles'>
             <h1 className='text-3xl mt-5 text-primary font-semibold'>Articles</h1>
-            <p className='text-white my-2 md:w-2/3 leading-[2]'>Checkout some of my featured articles</p>
+            {/* <p className='text-white my-2 md:w-2/3 leading-[2]'>Checkout some of my featured articles</p> */}
             {/* project items */}
             {
                 !error && loading ? (
@@ -59,7 +59,7 @@ const Blogs = () => {
                                 <div className="h-8 bg-gray-200 mt-5">
                                 </div>
                             </div>
-                 
+
                         </div>
                         <div className="flex justify-center mt-8 animate-pulse">
                             <div className="h-8 bg-gray-200 w-56 ml-5">
@@ -82,7 +82,7 @@ const Blogs = () => {
                                     <p className='text-white mt-1 text-clip overflow-hidden ... line-clamp-2 '>{post.node.brief}</p>
                                     {/* btns */}
                                     <div className="mt-5">
-                                        <a href={post.node.url} target="_blank"> <button className='btn bg-white py-2 px-4 text-black rounded hover:bg-black hover:text-white transition-all duration-500'>Read More</button></a>
+                                        <a href={post.node.url} target="_blank"> <button className='btn bg-white py-2 px-4 text-black rounded hover:text-white transition-all duration-500 hover:bg-primary'>Read More</button></a>
                                         {/* <a href={project.repoURL}> <button className='btn outline px-5 py-1.5 rounded border-none text-white ml-5'>Git Repo</button></a> */}
                                     </div>
 
@@ -96,7 +96,7 @@ const Blogs = () => {
                             <a href="https://codewithpres.hashnode.dev" target='_blank'>
                                 <button
                                     // Add this function to handle loading more posts
-                                    className="btn outline px-5 py-1.5 rounded border-none text-white ml-5 transition-all duration-500"
+                                    className="btn outline px-5 py-1.5 rounded border-none text-white ml-5 transition-all duration-500 hover:bg-primary hover:text-black"
                                 >
 
                                     Read More Articles on Hashnode
