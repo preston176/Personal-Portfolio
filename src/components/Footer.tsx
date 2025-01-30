@@ -15,7 +15,7 @@ const Footer = () => {
                         <h5 className="text-lg mt-0 mb-2 text-white">
 
                         </h5>
-                        <div className="mt-6 lg:mb-0 mb-6">
+                        <div className="mt-6 lg:mb-0 mb-6 -ml-6">
 
                             <SocialIcons />
 
@@ -24,10 +24,10 @@ const Footer = () => {
                     <div className="w-full lg:w-6/12 px-4">
                         <div className="flex flex-wrap items-top mb-6">
                             <div className="w-full lg:w-4/12 px-4 ml-auto">
-                                <span className="block uppercase text-slate-200 text-sm font-semibold mb-2">Quick Links</span>
+                                <span className="block uppercase text-slate-100 text-sm font-semibold mb-2">Quick Links</span>
                                 <ul className="list-unstyled">
                                     <li>
-                                        <a className="text-slate-300 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#about">About me</a>
+                                        <a className="text-slate-300 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#projects">Projects</a>
                                     </li>
                                     <li>
                                         <a className="text-slate-300 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://codewithpres.hashnode.dev/">Blog</a>
