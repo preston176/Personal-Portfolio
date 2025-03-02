@@ -71,7 +71,7 @@ const Contact = () => {
           </div>
           {/* contact form */}
           <div className="md:w-1/2">
-            <p className='mt-16 text-white text-2xl mb-6 text-center'>Feel free to reach me out ... </p>
+            <p className='mt-16 text-white text-2xl mb-6 text-center'>Feel free to reach out </p>
             <ToastContainer />
 
             <form onSubmit={handleFormSubmit} className='text-white flex flex-col items-center' >
