@@ -17,6 +17,7 @@ const Contact = () => {
     e.preventDefault();
     if (recaptcha.current && !recaptcha.current.getValue()) {
       toast.error('Please Submit Captcha')
+      return;
     }
 
     const form = e.currentTarget;
