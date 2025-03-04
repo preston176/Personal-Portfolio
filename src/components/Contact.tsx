@@ -1,21 +1,30 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // import SocialIcons from './SocialIconsContainer';
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 const Contact = () => {
-  const [state] = useForm("mjvngnoq");
+
+  const recaptcha = useRef<ReCAPTCHA | null>(null);
+
+
+  const [state] = useForm(import.meta.env.VITE_FORMSPREE!);
 
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (recaptcha.current && !recaptcha.current.getValue()) {
+      toast.error('Please Submit Captcha')
+    }
 
     const form = e.currentTarget;
     const formData = new FormData(form);
 
     try {
       // Submit the form to Formspree
-      const response = await fetch('https://formspree.io/f/mjvngnoq', {
+      const response = await fetch(`https://formspree.io/f/${import.meta.env.VITE_FORMSPREE!}`, {
         method: 'POST',
         body: formData,
         headers: {
@@ -87,6 +96,7 @@ const Contact = () => {
                 field="message"
                 errors={state.errors}
               />
+              <ReCAPTCHA sitekey={import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY} ref={recaptcha} />
               <button
                 disabled={state.submitting}
                 className="btn bg-white py-2 px-12 text-black hover:bg-black hover:text-white block transition-all duration-500 rounded"
