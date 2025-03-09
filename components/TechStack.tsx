@@ -1,7 +1,6 @@
 // TechStack.tsx
 import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import "@/types"
 import '@splidejs/react-splide/css/skyblue';
 import { FaReact, FaNodeJs, FaJsSquare, FaGitAlt, FaDocker } from 'react-icons/fa';
 import { SiMongodb, SiExpress, SiTailwindcss, SiPostgresql, SiUnity, SiFigma, SiNextdotjs, SiGraphql, SiAdobexd, SiGooglecloud } from 'react-icons/si';

@@ -21,7 +21,6 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@/types": ["./src/types/splide.d.ts"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
