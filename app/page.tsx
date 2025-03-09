@@ -9,7 +9,6 @@ import { useEffect, useContext } from 'react';
 import backToTopIcon from '@/public/assets/icons/back-to-top.png';
 // import Services from '../components/Services';
 import Image from 'next/image';
-import { GlobalContext } from '@/archive/src/context/GlobalContext';
 import Header from '@/components/Header/Header';
 import Home from '@/components/Home';
 import Resume from '@/components/Resume';
