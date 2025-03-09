@@ -38,7 +38,7 @@ const Blogs = () => {
             ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-6">
                     {posts.map((post) => (
-                        <Link key={post.node.id}  href={post.node.url}>
+                        <Link key={post.node.url}  href={post.node.url}>
                             <Card className="shadow-md border border-gray-700 bg-[#1a1a29] rounded px-3">
                                 <CardHeader>
                                     <Link href={post.node.url} target="_blank" rel="noopener noreferrer">
