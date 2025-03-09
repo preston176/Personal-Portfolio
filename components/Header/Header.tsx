@@ -1,6 +1,7 @@
 
 import Link from 'next/link';
 import { links } from './Links';
+import Image from 'next/image';
 
 
 
@@ -11,7 +12,7 @@ const Header = () => {
             <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
                 {/* Logo */}
                 <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
-                    <img className='w-28' src="/assets/logos/PrestonM.png" alt="Logo" />
+                    <Image className='w-28' src="/assets/logos/PrestonM.png" alt="Logo" width={100} height={100} />
                 </div>
 
                 {/* Mobile menu icon */}

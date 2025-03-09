@@ -10,7 +10,7 @@ const Home = () => {
             <div className="w-fit flex flex-col md:flex-row items-center justify-between">
                 {/* texts section */}
                 <div className="text-white">
-                    <h5 className='text-3xl mt-12'>Hello there, I'm</h5>
+                    <h5 className='text-3xl mt-12'>Hello there, I&apos;m</h5>
                     <h1 className='font-semibold text-3xl md:text-5xl my-4'>
                         {/* <Typewriter
                             options={{

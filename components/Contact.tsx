@@ -49,9 +49,9 @@ const Contact = () => {
   return (
     <section id="contact" className="px-8 md:px-16 py-16">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-5xl font-bold text-center text-primary">Let's Work Together 🤝</h1>
+        <h1 className="text-5xl font-bold text-center text-primary">Let&apos;s Work Together 🤝</h1>
         <p className="text-lg text-gray-400 text-center mt-4">
-          Have a project, idea, or just want to say hi? I'd love to hear from you!
+          Have a project&com; idea&com; or just want to say hi? I&apos;d love to hear from you!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
@@ -59,7 +59,7 @@ const Contact = () => {
           <div className="flex flex-col justify-center">
             <h2 className="text-3xl font-semibold text-white">Get in Touch</h2>
             <p className="text-gray-400 mt-3 text-lg">
-              Whether you're looking for a collaboration or have a business inquiry, feel free to reach out.
+              Whether you&apos;re looking for a collaboration or have a business inquiry&com; feel free to reach out.
             </p>
 
             {/* Social Icons Placeholder */}
