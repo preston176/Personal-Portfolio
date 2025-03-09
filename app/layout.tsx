@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description: "This is the official Portfolio of Preston Mayieka",
   keywords: "Preston Mayieka, portfolio, web development, design, projects, skills",
   authors: [{ name: "Preston Mayieka" }],
-  icons: { icon: "./favicon.ico" },
+  icons: { icon: "./" },
   robots: "follow, index",
 };
 

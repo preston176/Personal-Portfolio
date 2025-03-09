@@ -23,10 +23,10 @@ const TechStack: React.FC = () => {
         { name: 'Express', icon: <SiExpress />, color: '#ffffff' },
         { name: 'MongoDB', icon: <SiMongodb />, color: '#4DB33D' },
         { name: 'PostgreSQL', icon: <SiPostgresql />, color: '#336791' },
-        { name: 'TypeScript', icon: <FaReact />, color: '#3178C6' }, // Strongly typed JS, professional best practice
+        { name: 'TypeScript', icon: <FaReact />, color: '#3178C6' }, 
         { name: 'JavaScript', icon: <FaJsSquare />, color: '#F0DB4F' },
         { name: 'Git', icon: <FaGitAlt />, color: '#F1502F' },
-        { name: 'Docker', icon: <FaDocker />, color: '#2496ED' }, // For containerization
+        { name: 'Docker', icon: <FaDocker />, color: '#2496ED' }, 
         { name: 'Google Cloud', icon: <SiGooglecloud />, color: '#FF9900' },
         { name: 'Firebase', icon: <IoLogoFirebase />, color: '#FFA611' },
         { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: '#38B2AC' },

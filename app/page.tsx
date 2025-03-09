@@ -1,25 +1,17 @@
-"use client"
-import { useEffect, useContext } from 'react';
-
-// import About from '../components/About';
-
-// import Stats from '../components/Stats';
-
-// import whatsappLogo from '/assets/icons/WhatsApp_icon.png';
-import backToTopIcon from '@/public/assets/icons/back-to-top.png';
-// import Services from '../components/Services';
-import Image from 'next/image';
-import Header from '@/components/Header/Header';
-import Home from '@/components/Home';
-import Resume from '@/components/Resume';
-import Projects from '@/components/Projects';
-import Blogs from '@/components/Blogs';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
-import Link from 'next/link';
+"use client";
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import Header from "@/components/Header/Header";
+import Home from "@/components/Home";
+import Resume from "@/components/Resume";
+import Projects from "@/components/Projects";
+import Blogs from "@/components/Blogs";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const LandingPage = () => {
-  const { showBackToTop, setShowBackToTop } = useContext(GlobalContext);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,45 +19,35 @@ const LandingPage = () => {
       const windowHeight = window.innerHeight;
       const scrollThreshold = 0.25 * windowHeight;
 
-      if (scrollPosition > scrollThreshold) {
-        setShowBackToTop(true);
-      } else {
-        setShowBackToTop(false);
-      }
+      setShowBackToTop(scrollPosition > scrollThreshold);
     };
 
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup function to remove the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [setShowBackToTop]); // effect runs only once
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <main>
+    <>
       <Header />
       <Home />
-      {/* <About /> */}
       <Resume />
-      {/* <Services /> */}
       <Projects />
       <Blogs />
-      {/* <Stats /> */}
       <Contact />
       <Footer />
 
-      {/* Floating Whatsapp Icon on bottom right */}
-      <div className={`fixed top-0 right-0 mr-3 mb-3 py-2 ${showBackToTop ? 'opacity-95' : 'opacity-0 transition-opacity duration-700'}`} style={{
-        zIndex: "6",
-        left: "initial",
-      }}>
+      {/* Floating Back to Top Icon */}
+      <div
+        className={`fixed bottom-4 right-4 ${
+          showBackToTop ? "opacity-100" : "opacity-0"
+        } transition-opacity duration-700`}
+        style={{ zIndex: 6 }}
+      >
         <Link href="#">
-          <Image src={backToTopIcon} width="60" alt="a back to top logo" />
+          <Image src="/assets/icons/back-to-top.png" width={60} height={60} alt="Back to Top" />
         </Link>
       </div>
-      {/* End of floating whatsapp icon on bottom */}
-    </main>
+    </>
   );
 };
 
