@@ -40,6 +40,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', 'G-HSYH0BM0Q3');
           `}
         </Script>
+{/* Google Search Index */}
+        <meta name="google-site-verification" content="5uSVJB8rekMOL-naF-Jylengz5vo1dzwu962RCkzkp4" />
 
         {/* Tidio Chat (Optional, Uncomment to Use) */}
         {/* <Script strategy="lazyOnload" src="//code.tidio.co/qhhancpt76pkxaxn1jz28irsb5lcuszf.js" /> */}

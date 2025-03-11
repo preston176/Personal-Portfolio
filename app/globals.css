@@ -30,10 +30,6 @@
 .mobile-menu.open {
   display: block;
 }
-/* Splide css */
-.splide__pagination {
-  margin: 0;
-}
 
 /* Custom Utility Classes */
 @layer utilities {
