@@ -51,7 +51,7 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl font-bold text-center text-primary">Let&apos;s Work Together 🤝</h1>
         <p className="text-lg text-gray-400 text-center mt-4">
-          Have a project&comma; idea&comma; or just want to say hi? I&apos;d love to hear from you!
+          Have a project&#44; idea&#44; or just want to say hi? I&apos;d love to hear from you!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
