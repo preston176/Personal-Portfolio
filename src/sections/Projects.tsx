@@ -4,13 +4,13 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
+    company: "Solo Project",
     year: "2022",
-    title: "Dark Saas Landing Page",
+    title: "NexusAI",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Learnt how to do Payment integration for SaaS apps." },
+      { title: "Used Langchain, Pinecone and Groq for embeddings." },
+      { title: "Designed a clea, distraction-free interface." },
     ],
     link: "https://youtu.be/4k7IdSLxh6w",
     image: darkSaasLandingPage,

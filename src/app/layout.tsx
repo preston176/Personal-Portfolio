@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning className={poppins.variable}>
+    <html lang="en-US" suppressHydrationWarning className={poppins.variable}>
       <head>
         {/* Google Tag Manager */}
         <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-HSYH0BM0Q3" />
@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="google-site-verification" content="5uSVJB8rekMOL-naF-Jylengz5vo1dzwu962RCkzkp4" />
       </head>
 
-      <body className={`font-poppins "antialiased container mx-auto bg-gray-900 text-white"`}>
+      <body className={`font-poppins "antialiased container mx-auto bg-gray-900 text-white`}>
         {children}
       </body>
     </html>
