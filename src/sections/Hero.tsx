@@ -13,7 +13,7 @@ export const HeroSection = () => {
         {/* Hero Title */}
         <div className="max-w-lg md:max-w-2xl mx-auto text-center">
           <h1 className="text-3xl md:text-5xl font-bold mt-8 tracking-wide">
-            Hi, I'm  Preston <span className="text-green-400">Mayieka</span>
+            Hi, I&apos;m  Preston <span className="text-green-400">Mayieka</span>
           </h1>
 
           {/* Subtitle / Description */}
