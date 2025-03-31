@@ -6,14 +6,14 @@ export const HeroSection = () => {
       <div className="container flex flex-col items-center">
         {/* Availability Badge - Centered */}
         <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 flex items-center gap-4 rounded-lg justify-center">
-          <div className="bg-green-500 size-2.5 rounded-full" aria-hidden="true"></div>
+          <div className="bg-green-500 size-2.5 rounded-full animate-pulse" aria-hidden="true"></div>
           <span className="text-sm font-medium">Available for projects</span>
         </div>
 
         {/* Hero Title */}
         <div className="max-w-lg md:max-w-2xl mx-auto text-center">
           <h1 className="text-3xl md:text-5xl font-bold mt-8 tracking-wide">
-            Hi, I&apos;m  Preston <span className="text-green-400">Mayieka</span>
+            Hi, I&apos;m  Preston <span className="bg-gradient-to-r from-green-400 to-green-500 text-transparent bg-clip-text">Mayieka</span>
           </h1>
 
           {/* Subtitle / Description */}

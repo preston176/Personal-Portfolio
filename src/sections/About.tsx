@@ -60,7 +60,6 @@ export const AboutSection = () => {
       </div>
     </Card>
     <Card>
-      
     </Card>
   </section>;
 };
