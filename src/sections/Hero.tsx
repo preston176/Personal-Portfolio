@@ -1,4 +1,7 @@
+import { FaTwitter, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa6";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
+import { SocialIcons } from "@/components/SocialIcons";
+import Link from "next/link";
 
 export const HeroSection = () => {
   return (
@@ -22,24 +25,33 @@ export const HeroSection = () => {
           </h2>
         </div>
 
+        {/* Social Media Icons */}
+        <div className="flex space-x-6 mt-8">
+          <SocialIcons />
+        </div>
+
         {/* CTA Buttons */}
         <div className="flex flex-col md:flex-row gap-4 items-center justify-center mt-8">
+        <Link href={"#projects"}>
           <button
-            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl transition hover:bg-white hover:text-gray-900"
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl transition hover:bg-gray-200 hover:text-gray-900"
             aria-label="View my projects"
           >
             <span className="font-semibold">View My Projects</span>
             <ArrowDown className="size-4 animate-bounce" aria-hidden="true" />
           </button>
-
-          <button
-            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl transition hover:bg-gray-200"
-            aria-label="Connect with me"
-          >
-            <span role="img" aria-label="Wave emoji">👋</span>
-            <span className="font-semibold">Let’s Connect</span>
-          </button>
+          </Link>
+          <Link href={"#contact"}>
+            <button
+              className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl transition hover:bg-gray-200"
+              aria-label="Connect with me"
+            >
+              <span role="img" aria-label="Wave emoji">👋</span>
+              <span className="font-semibold">Let’s Connect</span>
+            </button></Link>
         </div>
+
+
       </div>
     </section>
   );
