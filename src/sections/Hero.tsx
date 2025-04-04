@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const HeroSection = () => {
   return (
-    <section className="py-32 md:py-48 lg:mt-12 lg:py-60 font-poppins">
+    <section className="py-32 md:py-48 lg:mt-6 lg:py-60 font-poppins">
       <div className="container flex flex-col items-center">
         {/* Availability Badge - Centered */}
         <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 flex items-center gap-4 rounded-lg justify-center">

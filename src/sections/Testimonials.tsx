@@ -9,9 +9,9 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    name: "David Mugoma",
+    position: "Software Developer",
+    text: "Working with Preston was a pleasure. He is one of the few Software Engineers who can fix PC-Related issues.",
     avatar: memojiAvatar1,
   },
   {
@@ -21,13 +21,13 @@ const testimonials = [
     avatar: memojiAvatar2,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    name: "Emmanuel Shikuku",
+    position: "CEO @ Calatech",
+    text: "Whether he's diving into frontend frameworks or backend technologies, Preston's ability to innovate and adapt is remarkable.",
     avatar: memojiAvatar3,
   },
   {
-    name: "Emily Carter",
+    name: "",
     position: "Product Manager @ GlobalTech",
     text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
     avatar: memojiAvatar4,
@@ -49,7 +49,7 @@ export const TestimonialsSection = () => {
           eyebrow="Happy Clients"
           description="Don't just take my word for it. See what my clients have to say about my work."
         />
-      </div>
+
 
       <div className="mt-16 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
         <div className="flex gap-8 flex-none ">
@@ -69,6 +69,7 @@ export const TestimonialsSection = () => {
             </Card>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );

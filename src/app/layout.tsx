@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="google-site-verification" content="5uSVJB8rekMOL-naF-Jylengz5vo1dzwu962RCkzkp4" />
       </head>
 
-      <body className={`font-poppins "antialiased container mx-auto overflow-x-hidden  bg-gray-900 text-white`}>
+      <body className={`font-poppins "antialiased mx-auto overflow-x-hidden  bg-gray-900 text-white`}>
         {children}
       </body>
     </html>
