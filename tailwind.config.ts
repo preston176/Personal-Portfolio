@@ -26,6 +26,15 @@ const config: Config = {
         serif: "var(--font-serif)",
         poppins: ["var(--font-poppins)", "sans-serif"],
       },
+      keyframes: {
+        "move-left": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        "move-left": "move-left 30s linear infinite",
+      },
     },
   },
   plugins: [],

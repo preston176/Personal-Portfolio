@@ -6,6 +6,7 @@ import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
 import Image from "next/image";
+import { Fragment } from "react";
 
 const testimonials = [
   {
@@ -29,9 +30,10 @@ const testimonials = [
   {
     name: "Benard Oloo",
     position: "ICT Director @ KPLC",
-    text: "He is one of a kind. During his industrial attachment he adapted quickly and participated in  ",
-    avatar: memojiAvatar4,
+    text: "During his industrial attachment, he adapted quickly and actively participated in maintaining data networks. His dedication and learning speed were impressive.",
+    avatar: memojiAvatar5,
   },
+  
 ];
 
 export const TestimonialsSection = () => {
@@ -45,25 +47,30 @@ export const TestimonialsSection = () => {
         />
 
 
-      <div className="mt-16 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-        <div className="flex gap-8 flex-none ">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="max-w-xs p-6 md:p-8 md:max-w-md">
-              <div className="flex items-center gap-4">
-                <div className="size-14 bg-gray-700 rounded-full flex flex-shrink-0 items-center justify-center">
-                  <Image src={testimonial.avatar} alt={`${testimonial.name}'s avatar`} width={56} height={56} />
-                </div>
+        <div className="mt-16 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
+          <div className="flex gap-8 flex-none animate-move-left  [animation-duration:60s]" >
+            {[...new Array(2).fill(0)].map((_, index) => (
+              <Fragment key={index}>
+                {testimonials.map((testimonial, index) => (
+                  <Card key={index} className="max-w-xs p-6 md:p-8 md:max-w-md">
+                    <div className="flex items-center gap-4">
+                      <div className="size-14 bg-gray-700 rounded-full flex flex-shrink-0 items-center justify-center">
+                        <Image src={testimonial.avatar} alt={`${testimonial.name}'s avatar`} width={56} height={56} />
+                      </div>
 
-                <div>
-                  <div className="font-semibold text-white">{testimonial.name}</div>
-                  <div className="text-sm text-white/60">{testimonial.position}</div>
-                </div>
-              </div>
-              <p className="mt-6 text-sm md:text-base text-white/80">{testimonial.text}</p>
-            </Card>
-          ))}
+                      <div>
+                        <div className="font-semibold text-white">{testimonial.name}</div>
+                        <div className="text-sm text-white/60">{testimonial.position}</div>
+                      </div>
+                    </div>
+                    <p className="mt-6 text-sm md:text-base text-white/80">{testimonial.text}</p>
+                  </Card>
+                ))}
+              </Fragment>
+            ))}
+
+          </div>
         </div>
-      </div>
       </div>
     </section>
   );
