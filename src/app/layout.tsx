@@ -38,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
         {/* Google Search Index */}
         <meta name="google-site-verification" content="5uSVJB8rekMOL-naF-Jylengz5vo1dzwu962RCkzkp4" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
 
       <body className={`font-poppins "antialiased mx-auto overflow-x-hidden  bg-gray-900 text-white`}>
