@@ -15,9 +15,9 @@ const portfolioProjects = [
     year: "2025",
     title: "Nexus AI - Chat with your Docs",
     results: [
-      "Learnt how to do Payment integration for SaaS apps.",
+      "A SaaS Application that allows you to securely store your Documents and chat with them",
       "Uses Langchain, Pinecone and Groq for embeddings.",
-      "Designed a clean, distraction-free interface."
+      "Uses Paystack for Pricing and Subscriptions"
     ],
     link: "https://youtu.be/4k7IdSLxh6w",
     image: nexusAILandingPage,
@@ -105,7 +105,7 @@ export const ProjectsSection = () => {
                     aria-label={`View GitHub repository for ${project.title}`}
                   >
                     <span>View GitHub Repository</span>
-                   <FaGithub />
+                    <FaGithub />
                   </button>
                 </Link>
               </div>
