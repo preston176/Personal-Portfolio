@@ -19,7 +19,7 @@ const portfolioProjects = [
       "Uses Langchain, Pinecone and Groq for embeddings.",
       "Uses Paystack for Pricing and Subscriptions"
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "https://nexusai-pdf.vercel.app",
     image: nexusAILandingPage,
     githubLink: "https://github.com/preston176/nexusAI",
     alt: "Screenshot of the NexusAI landing page"
