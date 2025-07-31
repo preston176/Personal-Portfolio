@@ -61,3 +61,15 @@ export const portfolioProjects = [
   //   alt: "Screenshot of the AI Startup Landing Page"
   // }
 ];
+
+// Footer Links
+
+export const footerLinks = [
+  { name: "Hashnode", url: "https://codewithpres.hashnode.dev/" },
+  {
+    name: "FreeCodeCamp",
+    url: "https://www.freecodecamp.org/news/author/preston176",
+  },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/preston-mayieka/" },
+  { name: "GitHub", url: "https://github.com/preston176/" },
+];

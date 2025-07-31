@@ -2,17 +2,8 @@
 
 import Link from "next/link";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const currentYear = new Date().getFullYear();
-const currentDay = days[new Date().getUTCDay()];
-
-const footerLinks = [
-  { name: "Hashnode", url: "https://codewithpres.hashnode.dev/" },
-  { name: "FreeCodeCamp", url: "https://www.freecodecamp.org/news/author/preston176" },
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/preston-mayieka/" },
-  { name: "GitHub", url: "https://github.com/preston176/" },
-];
+import { footerLinks } from "../../lib/constants";
+import { currentDay, currentYear } from "../../lib/utils";
 
 const FooterLink = ({ name, url }: { name: string; url: string }) => (
   <Link href={url} target="_blank" rel="noopener noreferrer">
