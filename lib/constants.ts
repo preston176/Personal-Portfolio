@@ -23,16 +23,16 @@ export const portfolioProjects = [
   {
     company: "Personal Project",
     year: "2025",
-    title: "JobReady",
+    title: "Ajira365",
     results: [
       "#1 Career-readiness platform for Students & Young Professionals.",
-      "Conduct AI-powered mock interviews",
+      "Conduct AI-powered mock interviews to stay on top",
       "Compete and get ranked in Global Leaderboards",
     ],
-    link: "https://postmantoopenapiconverter.netlify.app/",
+    link: "https://ajira-365.vercel.app/",
     // githubLink: "https://github.com/Technical-writing-mentorship-program/PostmanToOpenAPIConverter",
     image: JobReadyLandingPage,
-    alt: "Screenshot of the Job Ready Landing Page",
+    alt: "Screenshot of the Ajira 365 Landing Page",
   },
   {
     company: "Team Project",
