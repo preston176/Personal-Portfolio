@@ -12,6 +12,7 @@
     "@formspree/react": "^3.0.0",
     "@svgr/webpack": "^8.1.0",
     "@types/react-google-recaptcha": "^2.1.9",
+    "aos": "^2.3.4",
     "caniuse-lite": "^1.0.30001710",
     "framer-motion": "^11.3.21",
     "next": "14.2.5",
@@ -24,6 +25,7 @@
     "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

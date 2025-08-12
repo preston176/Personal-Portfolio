@@ -24,6 +24,7 @@ const ProjectCard = ({ project, index }: { project: Project, index: number }) =>
             key={index}
             className="bg-gray-800 rounded-3xl overflow-hidden shadow-lg px-8 pt-8 md:px-10 lg:px-16 pb-10 border border-white/40"
             aria-labelledby={`project-title-${index}`}
+            data-aos="fade-left" 
         >
             <div className="w-full rounded-lg overflow-hidden">
                 <Image
