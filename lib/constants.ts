@@ -1,8 +1,8 @@
 import nexusAILandingPage from "@/assets/images/nexus-ai-landing-page.png";
-import Postman2OpenSpecAPI from "@/assets/images/Postman2OpenSpecAPI.png";
 import JobReadyLandingPage from "@/assets/images/job-ready-landing-page.png";
+import FlowLens from "@/assets/images/flowlens.png";
+// import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png"; // Temporary placeholder for FlowLens
 
-// import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 // import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 
 export const portfolioProjects = [
@@ -44,24 +44,24 @@ export const portfolioProjects = [
     alt: "Screenshot of the Ajira 365 Landing Page",
   },
   {
-    slug: "postman-to-openapi",
-    company: "Team Project",
-    year: "2024",
-    title: "Postman to OpenAPI Converter",
+    slug: "flowlens",
+    company: "Solo Project",
+    year: "2025",
+    title: "FlowLens - VS Code Context Manager",
     results: [
-      "Converts Postman Collections (v2.x) to OpenAPI 3.0 Specifications.",
-      "Preserves request metadata (descriptions, examples, etc.)",
-      "Outputs in either YAML or JSON format",
+      "Privacy-first VS Code extension that captures and restores coding sessions instantly",
+      "Automatically tracks open files, tabs, terminal commands, and cursor positions",
+      "100% local storage - no code ever leaves your device",
+      "94+ developers already using it to reclaim their focus",
     ],
-    description: "A powerful tool that seamlessly converts Postman Collections (v2.x) into OpenAPI 3.0 Specifications. This converter helps teams transition from Postman to OpenAPI standards while preserving all important metadata, examples, and documentation. It supports both YAML and JSON output formats for maximum flexibility.",
-    technologies: ["JavaScript", "Node.js", "Postman API", "OpenAPI Specification", "HTML/CSS"],
-    challenges: "Ensuring accurate mapping between Postman's collection format and OpenAPI specification while maintaining all metadata integrity.",
-    link: "https://postmantoopenapiconverter.netlify.app/",
-    githubLink:
-      "https://github.com/Technical-writing-mentorship-program/PostmanToOpenAPIConverter",
-    image: Postman2OpenSpecAPI,
-    videoUrl: "", // Add your YouTube video URL here
-    alt: "Screenshot of the Light Saas Landing Page",
+    description: "FlowLens is a revolutionary VS Code extension that helps developers preserve their coding context with one click. No more lost time rebuilding your mental model after interruptions. It automatically captures your open files, terminal state, cursor positions, and git branch, then restores everything exactly as you left it. Built with privacy in mind, all data stays on your machine - FlowLens never uploads your code or telemetry.",
+    technologies: ["TypeScript", "VS Code Extension API", "Node.js", "Preact", "CSS"],
+    challenges: "Building a seamless context restoration system that works across different workspace configurations while maintaining zero-latency performance and ensuring complete privacy. Managing the complexity of capturing and restoring VS Code's internal state without disrupting the developer's workflow.",
+    link: "https://flowlens-vscode.vercel.app/",
+    githubLink: "https://github.com/preston176/flowlens-vscode-extension",
+    image: FlowLens,
+    videoUrl: "https://youtu.be/yTOI7nV4bKQ",
+    alt: "Screenshot of FlowLens VS Code extension",
   },
   // {
   //   company: "Quantum Dynamics",
