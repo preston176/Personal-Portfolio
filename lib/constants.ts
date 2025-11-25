@@ -7,6 +7,7 @@ import JobReadyLandingPage from "@/assets/images/job-ready-landing-page.png";
 
 export const portfolioProjects = [
   {
+    slug: "nexus-ai",
     company: "Solo Project",
     year: "2025",
     title: "Nexus AI - Chat with your Docs",
@@ -15,12 +16,17 @@ export const portfolioProjects = [
       "Uses Langchain, Pinecone and Groq for embeddings.",
       "Uses Paystack for Pricing and Subscriptions",
     ],
+    description: "Nexus AI is a powerful SaaS application that revolutionizes how you interact with your documents. Upload your PDFs and have intelligent conversations with them using advanced AI technology. The platform provides secure document storage and leverages cutting-edge AI models to understand context and provide accurate responses to your queries.",
+    technologies: ["Next.js", "TypeScript", "Langchain", "Pinecone", "Groq", "Paystack", "TailwindCSS"],
+    challenges: "Implementing efficient document chunking and embedding strategies to ensure accurate and contextually relevant responses from the AI.",
     link: "https://nexusai-pdf.vercel.app",
     image: nexusAILandingPage,
     githubLink: "https://github.com/preston176/nexusAI",
+    videoUrl: "https://www.youtube.com/embed/qxq8C-HEZVY", // Add your YouTube video URL here
     alt: "Screenshot of the NexusAI landing page",
   },
   {
+    slug: "ajira365",
     company: "Personal Project",
     year: "2025",
     title: "Ajira365",
@@ -29,12 +35,16 @@ export const portfolioProjects = [
       "Conduct AI-powered mock interviews to stay on top",
       "Compete and get ranked in Global Leaderboards",
     ],
-    link: "https://ajira-365.vercel.app/",
-    // githubLink: "https://github.com/Technical-writing-mentorship-program/PostmanToOpenAPIConverter",
+    description: "Ajira365 is the ultimate career-readiness platform designed for students and young professionals. It offers AI-powered mock interviews to help users practice and improve their interview skills. With global leaderboards, users can compete with peers and track their progress, making career preparation engaging and effective.",
+    technologies: ["Next.js", "TypeScript", "AI/ML", "TailwindCSS", "PostgreSQL"],
+    challenges: "Creating a realistic AI interview experience that adapts to different career paths and provides meaningful feedback.",
+    link: "https://app.ajira365.com/",
     image: JobReadyLandingPage,
+    videoUrl: "", // Add your YouTube video URL here
     alt: "Screenshot of the Ajira 365 Landing Page",
   },
   {
+    slug: "postman-to-openapi",
     company: "Team Project",
     year: "2024",
     title: "Postman to OpenAPI Converter",
@@ -43,10 +53,14 @@ export const portfolioProjects = [
       "Preserves request metadata (descriptions, examples, etc.)",
       "Outputs in either YAML or JSON format",
     ],
+    description: "A powerful tool that seamlessly converts Postman Collections (v2.x) into OpenAPI 3.0 Specifications. This converter helps teams transition from Postman to OpenAPI standards while preserving all important metadata, examples, and documentation. It supports both YAML and JSON output formats for maximum flexibility.",
+    technologies: ["JavaScript", "Node.js", "Postman API", "OpenAPI Specification", "HTML/CSS"],
+    challenges: "Ensuring accurate mapping between Postman's collection format and OpenAPI specification while maintaining all metadata integrity.",
     link: "https://postmantoopenapiconverter.netlify.app/",
     githubLink:
       "https://github.com/Technical-writing-mentorship-program/PostmanToOpenAPIConverter",
     image: Postman2OpenSpecAPI,
+    videoUrl: "", // Add your YouTube video URL here
     alt: "Screenshot of the Light Saas Landing Page",
   },
   // {

@@ -8,13 +8,19 @@ import { FaGithub } from "react-icons/fa";
 
 
 interface Project {
+    slug: string;
     image: string | StaticImageData;
     title: string;
     company: string;
     year: string | number;
     results: string[];
+    description: string;
+    technologies?: string[];
+    challenges?: string;
     link: string;
     githubLink?: string;
+    videoUrl?: string;
+    alt: string;
 }
 
 
@@ -54,9 +60,18 @@ const ProjectCard = ({ project, index }: { project: Project, index: number }) =>
                 ))}
             </ul>
             <div className="flex gap-4 flex-wrap">
+                <Link href={`/projects/${project.slug}`}>
+                    <button
+                        className="bg-gradient-to-r from-green-500 to-green-400 text-gray-950 h-10 md:h-12 w-full md:w-auto px-4 md:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-4 hover:from-green-600 hover:to-green-500 transition-all focus:ring-4 focus:ring-green-300 focus:outline-none"
+                        aria-label={`Learn more about ${project.title}`}
+                    >
+                        <span>Learn More</span>
+                        <ArrowUpRightIcon className="size-4" aria-hidden="true" />
+                    </button>
+                </Link>
                 <Link href={project.link} target="_blank" rel="noopener noreferrer">
                     <button
-                        className="bg-white text-gray-950 h-10 md:h-12 w-full md:w-auto px-4 md:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-4 hover:underline focus:ring-4 focus:ring-green-300 focus:outline-none"
+                        className="bg-white text-gray-950 h-10 md:h-12 w-full md:w-auto px-4 md:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-4 hover:bg-gray-100 transition-colors focus:ring-4 focus:ring-green-300 focus:outline-none"
                         aria-label={`View live site for ${project.title}`}
                     >
                         <span>View Live Site</span>
@@ -66,10 +81,10 @@ const ProjectCard = ({ project, index }: { project: Project, index: number }) =>
                 {project.githubLink &&
                     <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
                         <button
-                            className=" border border-white/15 text-white h-10 md:h-12 w-full md:w-auto px-4 md:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-4 hover:underline focus:ring-4 focus:ring-green-300 focus:outline-none"
+                            className=" border border-white/15 text-white h-10 md:h-12 w-full md:w-auto px-4 md:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-4 hover:bg-white/5 transition-colors focus:ring-4 focus:ring-green-300 focus:outline-none"
                             aria-label={`View GitHub repository for ${project.title}`}
                         >
-                            <span>View GitHub Repository</span>
+                            <span>View GitHub</span>
                             <FaGithub />
                         </button>
                     </Link>
