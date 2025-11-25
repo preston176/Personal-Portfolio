@@ -46,7 +46,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="md:text-lg mt-4 text-white/60"
           >
-            A Full-Stack Developer <br /> From Eldoret, Kenya
+            A Senior Software Engineer <br /> From Kenya 🇰🇪
           </motion.h2>
         </div>
 
