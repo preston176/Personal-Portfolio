@@ -18,9 +18,7 @@ export const AboutSection = async () => {
         <div className="mt-20 flex flex-col gap-8">
           {/* Articles from Hashnode */}
           <div className="space-y-6">
-            <div className="flex items-center justify-between">
-              <h3 className="text-2xl font-bold">Recent Articles</h3>
-            </div>
+            
 
             {articles.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -35,12 +33,12 @@ export const AboutSection = async () => {
             )}
 
             {/* Read More Buttons */}
-            <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
+            <div className="flex flex-wrap items-center justify-center gap-4 pt-20">
               <a
                 href="https://codewithpres.hashnode.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl transition hover:bg-gray-200 hover:text-gray-900 font-semibold"
               >
                 Read More on Hashnode
                 <svg
@@ -61,7 +59,7 @@ export const AboutSection = async () => {
                 href="https://www.freecodecamp.org/news/author/preston176/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl transition hover:bg-gray-200 font-semibold"
               >
                 Read More on FreeCodeCamp
                 <svg
