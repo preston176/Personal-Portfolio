@@ -11,14 +11,68 @@ export const AboutSection = async () => {
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
-          title="Crafting Code with Purpose"
-          description="Learn more about who I am and what I do"
+          title="Building Products That Scale"
+          description="3+ years turning ideas into production applications"
         />
+
+        {/* About Content */}
+        <div className="mt-12 max-w-3xl mx-auto">
+          <Card className="p-8 md:p-10">
+            <p className="text-white/80 text-lg leading-relaxed mb-6">
+              I&apos;m a full-stack engineer who builds and ships production-grade applications.
+              In 3 years, I&apos;ve gone from writing my first React component to architecting
+              AI-powered SaaS platforms serving real users.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 my-8">
+              <div className="space-y-3">
+                <h3 className="text-xl font-semibold text-green-400 mb-3">Technical Stack</h3>
+                <div className="space-y-2 text-white/80">
+                  <p><strong className="text-white">Frontend:</strong> React, Next.js, TypeScript, TailwindCSS</p>
+                  <p><strong className="text-white">Backend:</strong> Node.js, PostgreSQL, REST APIs</p>
+                  <p><strong className="text-white">AI/ML:</strong> LangChain, RAG pipelines, Pinecone</p>
+                  <p><strong className="text-white">DevOps:</strong> Vercel, Docker, Git workflows</p>
+                </div>
+              </div>
+
+              <div className="space-y-3">
+                <h3 className="text-xl font-semibold text-green-400 mb-3">What I&apos;ve Shipped</h3>
+                <ul className="space-y-2 text-white/80">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">✓</span>
+                    <span>AI document chat SaaS (500+ docs processed)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">✓</span>
+                    <span>Career prep platform (1,000+ interviews)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">✓</span>
+                    <span>VS Code extension (94+ installations)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">✓</span>
+                    <span>Open-source developer tooling</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="border-t border-white/10 pt-6">
+              <p className="text-white/80">
+                I share technical knowledge through articles on <strong className="text-white">FreeCodeCamp</strong> and{" "}
+                <strong className="text-white">Hashnode</strong>, covering full-stack development,
+                AI integration, and developer productivity.
+              </p>
+            </div>
+          </Card>
+        </div>
 
         <div className="mt-20 flex flex-col gap-8">
           {/* Articles from Hashnode */}
           <div className="space-y-6">
-            
+            <h3 className="text-2xl md:text-3xl font-bold text-center">Latest Articles</h3>
+
 
             {articles.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

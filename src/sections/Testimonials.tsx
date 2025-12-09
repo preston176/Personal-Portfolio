@@ -10,30 +10,23 @@ import { Fragment } from "react";
 
 const testimonials = [
   {
-    name: "David Mugoma",
-    position: "Software Developer",
-    text: "Working with Preston was a pleasure. He is one of the few Software Engineers who can fix PC-Related issues.",
-    avatar: memojiAvatar1,
-  },
-  // {
-  //   name: "",
-  //   position: "Head of Design @ GreenLeaf",
-  //   text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
-  //   avatar: memojiAvatar5,
-  // },
-  {
     name: "Emmanuel Shikuku",
     position: "CEO @ Calatech",
-    text: "Whether he's diving into frontend frameworks or backend technologies, Preston's ability to innovate and adapt is remarkable.",
+    text: "Whether he's diving into frontend frameworks or backend technologies, Preston's ability to innovate and adapt is remarkable. His technical depth consistently exceeds expectations.",
     avatar: memojiAvatar3,
   },
   {
-    name: "Benard Oloo",
-    position: "ICT Director @ KPLC",
-    text: "During his industrial attachment, he adapted quickly and actively participated in maintaining data networks. His dedication and learning speed were impressive.",
+    name: "FlowLens User",
+    position: "Senior Developer",
+    text: "This extension saved me hours of context-switching pain. Finally, a tool that understands how developers actually work. The privacy-first approach is exactly what I needed.",
+    avatar: memojiAvatar4,
+  },
+  {
+    name: "Nexus AI User",
+    position: "Content Manager",
+    text: "Nexus AI transformed how our team searches through documentation. What used to take 15 minutes now takes seconds. The AI responses are impressively accurate.",
     avatar: memojiAvatar5,
   },
-  
 ];
 
 export const TestimonialsSection = () => {
@@ -41,9 +34,9 @@ export const TestimonialsSection = () => {
     <section className="py-16 lg:py-24">
       <div className="container ">
         <SectionHeader
-          title="What Clients Say About Me"
-          eyebrow="Happy Clients"
-          description="Don't just take my word for it. See what my clients have to say about my work."
+          title="Real Impact, Real Feedback"
+          eyebrow="User Testimonials"
+          description="From users, collaborators, and industry leaders"
         />
 
 

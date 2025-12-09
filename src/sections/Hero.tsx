@@ -46,7 +46,8 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="md:text-lg mt-4 text-white/60"
           >
-            A Senior Software Engineer <br /> From Kenya 🇰🇪
+            Full-Stack Engineer | AI • SaaS • TypeScript<br />
+            <span className="text-white/80 font-semibold">Shipped 3 production apps serving 1,500+ users</span>
           </motion.h2>
         </div>
 
@@ -67,14 +68,14 @@ export const HeroSection = () => {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="flex flex-col md:flex-row gap-4 items-center justify-center mt-8"
         >
-        <Link href={"#projects"}>
-          <button
-            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl transition hover:bg-gray-200 hover:text-gray-900"
-            aria-label="View my projects"
-          >
-            <span className="font-semibold">View My Projects</span>
-            <ArrowDown className="size-4 animate-bounce" aria-hidden="true" />
-          </button>
+          <Link href={"#projects"}>
+            <button
+              className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl transition hover:bg-gray-200 hover:text-gray-900"
+              aria-label="View my projects"
+            >
+              <span className="font-semibold">View My Projects</span>
+              <ArrowDown className="size-4 animate-bounce" aria-hidden="true" />
+            </button>
           </Link>
           <Link href={"#contact"}>
             <button
