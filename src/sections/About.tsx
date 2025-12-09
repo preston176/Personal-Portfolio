@@ -19,9 +19,9 @@ export const AboutSection = async () => {
         <div className="mt-12 max-w-3xl mx-auto">
           <Card className="p-8 md:p-10">
             <p className="text-white/80 text-lg leading-relaxed mb-6">
-              I&apos;m a full-stack engineer who builds and ships production-grade applications.
-              In 3 years, I&apos;ve gone from writing my first React component to architecting
-              AI-powered SaaS platforms serving real users.
+              I&apos;m a software engineer specializing in AI-powered SaaS applications.
+              In 3 years, I&apos;ve gone from learning React to building production systems
+              that integrate LLMs, vector databases, and real-time AI features for 1,500+ users.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 my-8">
