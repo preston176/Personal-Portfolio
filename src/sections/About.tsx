@@ -11,27 +11,27 @@ export const AboutSection = async () => {
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
-          title="Building Products That Scale"
-          description="3+ years turning ideas into production applications"
+          title="I Ship Fast, Automate Everything"
+          description="From idea to production in weeks, not months"
         />
 
         {/* About Content */}
         <div className="mt-12 max-w-3xl mx-auto">
           <Card className="p-8 md:p-10">
             <p className="text-white/80 text-lg leading-relaxed mb-6">
-              I&apos;m a software engineer specializing in AI-powered SaaS applications.
-              In 3 years, I&apos;ve gone from learning React to building production systems
-              that integrate LLMs, vector databases, and real-time AI features for 1,500+ users.
+              I don&apos;t just write code—I ship products and automate workflows.
+              In 3 years, I&apos;ve shipped 3 production SaaS apps (AI document chat, career prep platform, VS Code extension)
+              that serve 1,500+ users. I build systems that run themselves: AI pipelines, automated deployments, and tools that eliminate manual work.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 my-8">
               <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-green-400 mb-3">Technical Stack</h3>
+                <h3 className="text-xl font-semibold text-green-400 mb-3">What I Automate</h3>
                 <div className="space-y-2 text-white/80">
-                  <p><strong className="text-white">Frontend:</strong> React, Next.js, TypeScript, TailwindCSS</p>
-                  <p><strong className="text-white">Backend:</strong> Node.js, PostgreSQL, REST APIs</p>
-                  <p><strong className="text-white">AI/ML:</strong> LangChain, RAG pipelines, Pinecone</p>
-                  <p><strong className="text-white">DevOps:</strong> Vercel, Docker, Git workflows</p>
+                  <p><strong className="text-white">AI Workflows:</strong> Document processing, RAG pipelines, LLM integrations</p>
+                  <p><strong className="text-white">Development:</strong> CI/CD, Docker deployments, Git automation</p>
+                  <p><strong className="text-white">User Flows:</strong> Payments, auth, email sequences, data sync</p>
+                  <p><strong className="text-white">Productivity:</strong> VS Code extensions, dev tooling, context management</p>
                 </div>
               </div>
 
@@ -60,9 +60,9 @@ export const AboutSection = async () => {
 
             <div className="border-t border-white/10 pt-6">
               <p className="text-white/80">
-                I share technical knowledge through articles on <strong className="text-white">FreeCodeCamp</strong> and{" "}
-                <strong className="text-white">Hashnode</strong>, covering full-stack development,
-                AI integration, and developer productivity.
+                I write about <strong className="text-white">shipping fast</strong>, <strong className="text-white">AI automation</strong>,
+                and <strong className="text-white">developer productivity</strong> on FreeCodeCamp and Hashnode—sharing
+                how to build and deploy real products, not just code.
               </p>
             </div>
           </Card>
