@@ -6,6 +6,7 @@ import { SocialIcons } from "@/components/SocialIcons";
 import Link from "next/link";
 import { FloatingParticles } from "@/components/FloatingParticles";
 import { motion } from "framer-motion";
+import Pointer from "@/components/Pointer";
 
 export const HeroSection = () => {
   return (
@@ -22,10 +23,43 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-gray-950 border border-gray-800 px-4 py-1.5 flex items-center gap-4 rounded-lg justify-center"
+          className="bg-gray-950 border border-gray-800 px-4 py-1.5 flex items-center gap-4 rounded-lg justify-center relative"
         >
           <div className="bg-green-500 size-2.5 rounded-full animate-pulse" aria-hidden="true"></div>
-          <span className="text-sm font-medium">Available for projects</span>
+          <span className="text-sm font-medium">Let&apos;s build together</span>
+
+          {/* Floating Pointer 1 - Right side */}
+          <motion.div
+            animate={{
+              x: [0, 20, -8, 18, -5, 0],
+              y: [0, -15, 10, -12, 8, 0],
+            }}
+            transition={{
+              duration: 18,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="absolute -right-24 -top-10 pointer-events-none"
+          >
+            <Pointer name="Preston M" color="bg-blue-500" />
+          </motion.div>
+
+          {/* Floating Pointer 2 - Left side (mirrored) */}
+          <motion.div
+            animate={{
+              x: [0, -20, 8, -18, 5, 0],
+              y: [0, 15, -10, 12, -8, 0],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.2,
+            }}
+            className="absolute -left-16 bottom-0 pointer-events-none scale-x-[-1]"
+          >
+            <Pointer name="You" color="bg-red-500" />
+          </motion.div>
         </motion.div>
 
         {/* Hero Title */}
