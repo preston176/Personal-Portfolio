@@ -12,19 +12,19 @@ const testimonials = [
   {
     name: "Emmanuel Shikuku",
     position: "CEO @ Calatech",
-    text: "Whether he's diving into frontend frameworks or backend technologies, Preston's ability to innovate and adapt is remarkable. His technical depth consistently exceeds expectations.",
+    text: "Deep technical expertise across frontend and backend frameworks",
     avatar: memojiAvatar3,
   },
   {
     name: "FlowLens User",
     position: "Senior Developer",
-    text: "This extension saved me hours of context-switching pain. Finally, a tool that understands how developers actually work. The privacy-first approach is exactly what I needed.",
+    text: "Saved hours of context-switching pain—privacy-first approach is exactly what developers need",
     avatar: memojiAvatar4,
   },
   {
     name: "Nexus AI User",
     position: "Content Manager",
-    text: "Nexus AI transformed how our team searches through documentation. What used to take 15 minutes now takes seconds. The AI responses are impressively accurate.",
+    text: "Cut documentation search from 15 minutes to seconds—impressively accurate AI responses",
     avatar: memojiAvatar5,
   },
 ];
