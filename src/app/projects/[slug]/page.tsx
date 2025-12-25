@@ -95,6 +95,21 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           )}
         </div>
 
+        {/* Backstory Section */}
+        {project.backstory && (
+          <div className="mb-12 bg-gradient-to-br from-green-500/5 to-green-400/5 border border-green-500/20 rounded-2xl p-8">
+            <h2 className="font-serif text-3xl md:text-4xl mb-6">The Story</h2>
+            <ul className="space-y-3">
+              {(Array.isArray(project.backstory) ? project.backstory : [project.backstory]).map((point: string, index: number) => (
+                <li key={index} className="flex gap-3">
+                  <span className="text-green-400 mt-1">•</span>
+                  <span className="text-white/80">{point}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {/* Project Image */}
         <div className="mb-12 rounded-2xl overflow-hidden border border-white/10">
           <Image
@@ -144,9 +159,45 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             {project.challenges && (
               <section>
                 <h2 className="font-serif text-3xl md:text-4xl mb-6">Challenges & Solutions</h2>
-                <p className="text-white/80 text-lg leading-relaxed">
-                  {project.challenges}
-                </p>
+                <div className="space-y-6">
+                  {/* Challenge */}
+                  <div>
+                    <h3 className="text-green-400 font-semibold text-lg mb-2">The Challenge</h3>
+                    <p className="text-white/80 leading-relaxed">
+                      {project.challenges}
+                    </p>
+                  </div>
+
+                  {/* What I Learned */}
+                  {project.lessonsLearned && (
+                    <div>
+                      <h3 className="text-green-400 font-semibold text-lg mb-3">What I Learned</h3>
+                      <ul className="space-y-2">
+                        {project.lessonsLearned.map((lesson, index) => (
+                          <li key={index} className="flex gap-3">
+                            <span className="text-green-400 mt-1">•</span>
+                            <span className="text-white/80">{lesson}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* Impact */}
+                  {project.impact && (
+                    <div>
+                      <h3 className="text-green-400 font-semibold text-lg mb-3">Impact & Growth</h3>
+                      <ul className="space-y-2">
+                        {project.impact.map((item, index) => (
+                          <li key={index} className="flex gap-3">
+                            <span className="text-green-400 mt-1">•</span>
+                            <span className="text-white/80">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
               </section>
             )}
           </div>
