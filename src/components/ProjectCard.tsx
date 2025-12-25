@@ -14,6 +14,7 @@ interface Project {
     company: string;
     year: string | number;
     results: string[];
+    cardResults?: string[];
     description: string;
     technologies?: string[];
     challenges?: string;
@@ -52,8 +53,8 @@ const ProjectCard = ({ project, index }: { project: Project, index: number }) =>
                 <hr className="border-t-2 border-white/5 mt-3" />
             </div>
             <ul className="flex flex-col gap-2 mt-3" role="list">
-                {project.results.map((result, i) => (
-                    <li key={i} className="flex gap-2 text-sm text-white/50">
+                {(project.cardResults || project.results).map((result, i) => (
+                    <li key={i} className="flex gap-2 text-lg text-white/50">
                         <CheckCircleIcon className="size-5 flex-shrink-0" aria-hidden="true" />
                         <span>{result}</span>
                     </li>
