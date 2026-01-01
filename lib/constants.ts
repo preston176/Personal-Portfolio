@@ -49,7 +49,7 @@ export const portfolioProjects = [
       "LLM API costs will destroy your margins unless you optimize hard. Groq + Pinecone was the breakthrough that made this sustainable",
       "Speed is trust. Anything under 2 seconds feels instant. Over 3 seconds and users start thinking the system is broken",
       "Billing is harder than it looks. Refunds, failed transactions, chargebacks—you need robust error handling or you lose money and credibility",
-      "Users know what they need better than I do. Early feedback kept mentioning 'Can I use this on mobile?' I didn't think mobile mattered for document analysis—nobody was signing up. Made it fully responsive. Signups jumped, and suddenly I was getting real feedback from actual users. Learned: my assumptions about user behavior are usually wrong. Ship what users ask for, not what I think they need",
+      "Users know what they need better than I do. Early feedback kept mentioning 'Can I use this on mobile?' I didn't think mobile mattered for document analysis—nobody was signing up. Made it fully responsive. All my friends signed up finally, and suddenly I was getting real feedback from actual users. Learned: my assumptions about user behavior are usually wrong. Ship what users ask for, not what I think they need",
     ],
     impact: [
       "Proved there's real demand for this—people will pay for document search that actually works",
