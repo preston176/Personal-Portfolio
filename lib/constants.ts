@@ -14,7 +14,7 @@ export const portfolioProjects = [
     backstory: [
       "During freelance consulting in mid-2024, I spent 2+ hours daily searching through client PDFs",
       "Traditional search couldn't understand context—it was useless for finding critical information",
-      "Tried Claude API for semantic search, but $800/month was insane for a personal tool",
+      "Tried GPT 3.5 OpenAI API for semantic search, but $200+/month was very expensive",
       "That's when the lightbulb hit: Groq's ultra-fast inference + Pinecone's vector search",
       "Cut costs to $200/month while improving accuracy at the same time",
       "Real discovery: hybrid search (Dense Vector + Sparse Keyword) eliminates hallucinations that kill trust",
