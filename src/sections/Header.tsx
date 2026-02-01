@@ -1,57 +1,29 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import Link from "next/link"
+import { motion } from "framer-motion"
+import { useActiveSection } from "@/hooks/useActiveSection"
+import { headerAnimation } from "@/constants/heroAnimations"
 
 export const Header = () => {
-  const [activeSection, setActiveSection] = useState("");
-
   const navLinks = [
     { href: "/", label: "Home", id: "hero" },
     { href: "/#projects", label: "Projects", id: "projects" },
     { href: "/#about", label: "Articles", id: "about" },
     { href: "/#contact", label: "Contact", id: "contact" },
-  ];
+  ]
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["hero", "projects", "about", "contact"];
-      const scrollPosition = window.scrollY + 100;
-
-      for (const sectionId of sections) {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          const { offsetTop, offsetHeight } = section;
-          if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + offsetHeight
-          ) {
-            setActiveSection(sectionId);
-            break;
-          }
-        }
-      }
-    };
-
-    // Set initial active section
-    handleScroll();
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const activeSection = useActiveSection(["hero", "projects", "about", "contact"])
 
   return (
     <motion.div
       className="sticky md:w-fit mx-auto top-5 z-50"
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      {...headerAnimation}
     >
       <nav className="flex justify-center items-center gap-1 p-2 border border-white/15 rounded-full bg-black/80 backdrop-blur-md shadow-lg ">
         {navLinks.map(({ href, label, id }, index) => {
-          const isContact = index === navLinks.length - 1;
-          const isActive = activeSection === id;
+          const isContact = index === navLinks.length - 1
+          const isActive = activeSection === id
 
           return (
             <Link
@@ -67,9 +39,9 @@ export const Header = () => {
             >
               {label}
             </Link>
-          );
+          )
         })}
       </nav>
     </motion.div>
-  );
-};
+  )
+}

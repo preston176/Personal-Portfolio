@@ -7,6 +7,15 @@ import Link from "next/link";
 import { FloatingParticles } from "@/components/FloatingParticles";
 import { motion } from "framer-motion";
 import Pointer from "@/components/Pointer";
+import {
+  badgeAnimation,
+  titleAnimation,
+  subtitleAnimation,
+  socialIconsAnimation,
+  ctaButtonsAnimation,
+  floatingPointer1Animation,
+  floatingPointer2Animation,
+} from "@/constants/heroAnimations";
 
 export const HeroSection = () => {
   return (
@@ -20,9 +29,7 @@ export const HeroSection = () => {
       <div className="container flex flex-col items-center relative z-10">
         {/* Availability Badge - Centered */}
         <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          {...badgeAnimation}
           className="bg-gray-950 border border-gray-800 px-4 py-1.5 flex items-center gap-4 rounded-lg justify-center relative"
         >
           <div className="bg-green-500 size-2.5 rounded-full animate-pulse" aria-hidden="true"></div>
@@ -30,15 +37,7 @@ export const HeroSection = () => {
 
           {/* Floating Pointer 1 - Right side */}
           <motion.div
-            animate={{
-              x: [0, 20, -8, 18, -5, 0],
-              y: [0, -15, 10, -12, 8, 0],
-            }}
-            transition={{
-              duration: 18,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
+            {...floatingPointer1Animation}
             className="absolute -right-24 -top-10 pointer-events-none"
           >
             <Pointer name="Preston M" color="bg-blue-500" />
@@ -46,16 +45,7 @@ export const HeroSection = () => {
 
           {/* Floating Pointer 2 - Left side (mirrored) */}
           <motion.div
-            animate={{
-              x: [0, -20, 8, -18, 5, 0],
-              y: [0, 15, -10, 12, -8, 0],
-            }}
-            transition={{
-              duration: 20,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: 0.2,
-            }}
+            {...floatingPointer2Animation}
             className="absolute -left-16 bottom-0 pointer-events-none scale-x-[-1]"
           >
             <Pointer name="You" color="bg-red-500" />
@@ -65,9 +55,7 @@ export const HeroSection = () => {
         {/* Hero Title */}
         <div className="max-w-lg md:max-w-2xl mx-auto text-center">
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            {...titleAnimation}
             className="text-3xl md:text-5xl font-bold mt-8 tracking-wide"
           >
             Hi, I&apos;m  Preston <span className="bg-gradient-to-r from-green-400 to-green-500 text-transparent bg-clip-text drop-shadow-[0_0_20px_rgba(34,197,94,0.3)]">Mayieka</span>
@@ -75,9 +63,7 @@ export const HeroSection = () => {
 
           {/* Subtitle / Description */}
           <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            {...subtitleAnimation}
             className="md:text-lg mt-4 text-white/60"
           >
             I build high-fidelity products that scale without friction. I&apos;m a Software Engineer who solves problems with code and design.
@@ -87,9 +73,7 @@ export const HeroSection = () => {
 
         {/* Social Media Icons */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
+          {...socialIconsAnimation}
           className="flex space-x-6 mt-8"
         >
           <SocialIcons />
@@ -97,9 +81,7 @@ export const HeroSection = () => {
 
         {/* CTA Buttons */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
+          {...ctaButtonsAnimation}
           className="flex flex-col md:flex-row gap-4 items-center justify-center mt-8"
         >
           <Link href={"#projects"}>
