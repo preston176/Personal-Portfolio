@@ -80,7 +80,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="md:text-lg mt-4 text-white/60"
           >
-            I ship AI-powered SaaS products and automate workflows<br />
+            I build high-fidelity products that scale without friction. I&apos;m a Software Engineer who solves problems with code and design.
             <span className="text-white/80 font-semibold">3 production apps • 1,500+ users • Built in 3 years</span>
           </motion.h2>
         </div>
