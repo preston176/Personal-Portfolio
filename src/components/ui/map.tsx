@@ -105,6 +105,7 @@ function Map({ children, styles, ...props }: MapProps) {
       mapInstance.remove();
       mapRef.current = null;
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isMounted]);
 
   useEffect(() => {
@@ -115,7 +116,7 @@ function Map({ children, styles, ...props }: MapProps) {
         { diff: true }
       );
     }
-  }, [resolvedTheme]);
+  }, [resolvedTheme, mapStyles.dark, mapStyles.light]);
 
   const isLoading = !isMounted || !isLoaded || !isStyleLoaded;
 
@@ -239,7 +240,8 @@ function MapMarker({
       markerElementRef.current = null;
       setIsReady(false);
     };
-  }, [isLoaded]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isLoaded, map]);
 
   useEffect(() => {
     markerRef.current?.setLngLat([longitude, latitude]);
@@ -323,7 +325,9 @@ function MarkerPopup({
       containerRef.current = null;
       setMounted(false);
     };
-  }, [isReady]);
+    // Refs are intentionally not in dependencies - this should only run when marker is ready
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isReady, popupOptions]);
 
   const handleClose = () => popupRef.current?.remove();
 
@@ -406,7 +410,9 @@ function MarkerTooltip({
       containerRef.current = null;
       setMounted(false);
     };
-  }, [isReady, map]);
+    // Refs are intentionally not in dependencies - this should only run when marker is ready
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isReady, map, popupOptions]);
 
   if (!mounted || !containerRef.current) return null;
 
@@ -706,6 +712,12 @@ function MapPopup({
       }
       popupRef.current = null;
     };
+    // Intentionally omitting dependencies to prevent popup recreation:
+    // - latitude/longitude: handled by separate effect (lines 717-719) for position updates only
+    // - container: stable (created once with useMemo)
+    // - onClose: captured in closure, changes shouldn't recreate popup
+    // - popupOptions: spread props, typically stable in this use case
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map]);
 
   useEffect(() => {
